@@ -82,6 +82,12 @@ extension SuperTextStyles on TextStyle {
     );
   }
 
+  TextStyle gilda() {
+    return copyWith(
+      fontFamily: "Gilda",
+    );
+  }
+
   TextStyle w(int i) {
     FontWeight w = FontWeight.w400;
 
