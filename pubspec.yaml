@@ -12,6 +12,7 @@ dependencies:
 
   cupertino_icons: ^1.0.5
   flutter_svg: ^2.0.4
+  url_launcher: ^6.1.10
   flutter_neumorphic:
     git: https://github.com/jinosh05/Flutter-Neumorphic
 

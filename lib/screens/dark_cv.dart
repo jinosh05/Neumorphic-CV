@@ -1,10 +1,13 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
+import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/env.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DarkCV extends StatefulWidget {
   const DarkCV({super.key});
@@ -60,9 +63,11 @@ class _DarkCVState extends State<DarkCV> {
                         ),
                         Row(
                           children: [
-                            NeumorphicButton(
-                              child: const Text.rich(TextSpan(children: [])),
-                            )
+                            const LinksButtons(type: LinkButtonType.git),
+                            Space.x!,
+                            const LinksButtons(type: LinkButtonType.linkedIn),
+                            Space.x!,
+                            const LinksButtons(type: LinkButtonType.gmail),
                           ],
                         )
                       ],
@@ -78,6 +83,89 @@ class _DarkCVState extends State<DarkCV> {
   }
 }
 
+class LinksButtons extends StatelessWidget {
+  const LinksButtons({
+    super.key,
+    required this.type,
+  });
+
+  final LinkButtonType type;
+
+  @override
+  Widget build(BuildContext context) {
+    return NeumorphicButton(
+      onPressed: () async {
+        String url = getURL();
+        if (await canLaunchUrl(Uri.parse(url))) {
+          launchUrl(Uri.parse(url));
+        }
+      },
+      margin: Space.z,
+      padding: Space.all(0.5, 0.35),
+      style: NeumorphicStyle(
+        depth: AppDimensions.normalize(1),
+        color: AppColors.black4,
+        border: const NeumorphicBorder(color: AppColors.black5),
+        lightSource: LightSource.top,
+      ),
+      child: Wrap(
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: [
+          SvgPicture.asset(
+            getIcon(),
+            height: AppDimensions.font(9),
+          ),
+          Space.x!,
+          Text(
+            getID(),
+            style: AppText.b3!,
+          ),
+          Space.x!,
+        ],
+      ),
+    );
+  }
+
+  String getURL() {
+    switch (type) {
+      case LinkButtonType.git:
+        return Env.gitlink;
+      case LinkButtonType.linkedIn:
+        return Env.linkedinLink;
+      case LinkButtonType.gmail:
+        return "mailto:${Env.gmailId}@gmail.com";
+      default:
+        return Env.gitlink;
+    }
+  }
+
+  String getID() {
+    switch (type) {
+      case LinkButtonType.git:
+        return Env.gitID;
+      case LinkButtonType.linkedIn:
+        return Env.linkedID;
+      case LinkButtonType.gmail:
+        return Env.gmailId;
+      default:
+        return Env.gitID;
+    }
+  }
+
+  String getIcon() {
+    switch (type) {
+      case LinkButtonType.git:
+        return Assets.gitIcon;
+      case LinkButtonType.linkedIn:
+        return Assets.linkedIn;
+      case LinkButtonType.gmail:
+        return Assets.gmailIcon;
+      default:
+        return Assets.gitIcon;
+    }
+  }
+}
+
 class ProfilePic extends StatelessWidget {
   const ProfilePic({
     super.key,
@@ -86,23 +174,19 @@ class ProfilePic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NeumorphicButton(
+      onPressed: () {},
       margin: Space.z,
       padding: Space.all(0.25),
-      drawSurfaceAboveChild: true,
       style: const NeumorphicStyle(
         color: AppColors.black4,
-        depth: 5,
-        intensity: 5,
-        shadowDarkColor: AppColors.black5,
-        shadowLightColor: AppColors.black4,
-        oppositeShadowLightSource: true,
+        lightSource: LightSource.top,
+        border: NeumorphicBorder(color: AppColors.black5),
         boxShape: NeumorphicBoxShape.circle(),
       ),
-      child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(
-            AppDimensions.normalize(50),
-          ),
+      child: Container(
+        padding: Space.all(0.25),
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
         ),
         child: Container(
           clipBehavior: Clip.antiAlias,
@@ -112,10 +196,16 @@ class ProfilePic extends StatelessWidget {
           ),
           child: Image.asset(
             Env.imageURL,
-            width: AppDimensions.normalize(50),
+            width: AppDimensions.normalize(60),
           ),
         ),
       ),
     );
   }
+}
+
+enum LinkButtonType {
+  git,
+  gmail,
+  linkedIn,
 }

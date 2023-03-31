@@ -12,4 +12,14 @@ No 14/28 , Nehru Nagar 10th Street,
 Tondiarpet, Chennai-81,
 Tamil Nadu, India
 """;
+
+  static const String gitID = "jinosh05";
+
+  static const String gitlink = "https://github.com/jinosh05";
+
+  static const String linkedID = "jinosh05";
+
+  static const String linkedinLink = "https://github.com/jinosh05";
+
+  static const String gmailId = "jinosh05";
 }
