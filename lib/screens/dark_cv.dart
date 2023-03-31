@@ -40,37 +40,44 @@ class _DarkCVState extends State<DarkCV> {
                   children: [
                     const ProfilePic(),
                     Space.x1!,
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Space.y!,
-                        Text(
-                          Env.name,
-                          style: AppText.l1b!.gilda(),
-                        ),
-                        Space.y!,
-                        Text(
-                          Env.profession.toUpperCase(),
-                          style: AppText.b2b!.gilda().copyWith(
-                            color: AppColors.lightBlue,
-                            shadows: [const Shadow(color: AppColors.darkBlue)],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Space.y!,
+                          Text(
+                            Env.name,
+                            style: AppText.b2b!.gilda(),
                           ),
-                        ),
-                        Space.yf(0.25),
-                        Text(
-                          Env.address,
-                          style: AppText.l1b!,
-                        ),
-                        Row(
-                          children: [
-                            const LinksButtons(type: LinkButtonType.git),
-                            Space.x!,
-                            const LinksButtons(type: LinkButtonType.linkedIn),
-                            Space.x!,
-                            const LinksButtons(type: LinkButtonType.gmail),
-                          ],
-                        )
-                      ],
+                          Space.yf(0.25),
+                          Text(
+                            Env.profession.toUpperCase(),
+                            style: AppText.b3b!.gilda().copyWith(
+                              color: AppColors.lightBlue,
+                              shadows: [
+                                const Shadow(color: AppColors.darkBlue)
+                              ],
+                            ),
+                          ),
+                          Space.yf(0.25),
+                          SizedBox(
+                            width: AppDimensions.width(60),
+                            child: Text(
+                              Env.address,
+                              style: AppText.l1b,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              const LinksButtons(type: LinkButtonType.git),
+                              Space.x!,
+                              const LinksButtons(type: LinkButtonType.linkedIn),
+                              Space.x!,
+                              const LinksButtons(type: LinkButtonType.gmail),
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
@@ -113,12 +120,12 @@ class LinksButtons extends StatelessWidget {
         children: [
           SvgPicture.asset(
             getIcon(),
-            height: AppDimensions.font(9),
+            height: AppDimensions.font(8),
           ),
           Space.x!,
           Text(
             getID(),
-            style: AppText.b3!,
+            style: AppText.l1!,
           ),
           Space.x!,
         ],
@@ -196,7 +203,7 @@ class ProfilePic extends StatelessWidget {
           ),
           child: Image.asset(
             Env.imageURL,
-            width: AppDimensions.normalize(60),
+            width: AppDimensions.normalize(55),
           ),
         ),
       ),
