@@ -1,5 +1,6 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
+import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
@@ -32,8 +33,40 @@ class _DarkCVState extends State<DarkCV> {
               Padding(
                 padding: Space.all(1.5),
                 child: Row(
-                  children: const [
-                    ProfilePic(),
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const ProfilePic(),
+                    Space.x1!,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Space.y!,
+                        Text(
+                          Env.name,
+                          style: AppText.l1b!.gilda(),
+                        ),
+                        Space.y!,
+                        Text(
+                          Env.profession.toUpperCase(),
+                          style: AppText.b2b!.gilda().copyWith(
+                            color: AppColors.lightBlue,
+                            shadows: [const Shadow(color: AppColors.darkBlue)],
+                          ),
+                        ),
+                        Space.yf(0.25),
+                        Text(
+                          Env.address,
+                          style: AppText.l1b!,
+                        ),
+                        Row(
+                          children: [
+                            NeumorphicButton(
+                              child: const Text.rich(TextSpan(children: [])),
+                            )
+                          ],
+                        )
+                      ],
+                    )
                   ],
                 ),
               )
