@@ -5,10 +5,13 @@ version: 1.0.0+1
 
 environment:
   sdk: ">=2.19.4 <3.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
+
   cupertino_icons: ^1.0.5
+  flutter_svg: ^2.0.4
   flutter_neumorphic:
     git: https://github.com/jinosh05/Flutter-Neumorphic
 
