@@ -6,6 +6,7 @@ import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
 
+import '../configs/app_typography.dart';
 import 'components/profile_info_header.dart';
 
 class DarkCV extends StatefulWidget {
@@ -65,7 +66,18 @@ class _DarkCVState extends State<DarkCV> {
                               padding: Space.all(1),
                               child: const Text(Env.aboutMe),
                             ),
-                          )
+                          ),
+                          Space.y2!,
+                          Text(
+                            S.skills.toUpperCase(),
+                            style: AppText.b3b!.gilda().copyWith(
+                              color: AppColors.darkBlue,
+                              shadows: [
+                                const Shadow(
+                                    blurRadius: 0.5, color: AppColors.lightBlue)
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
