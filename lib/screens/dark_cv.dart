@@ -1,12 +1,12 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
-import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
-import 'package:neumorphic_cv/constants/enums.dart';
+import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
-import 'package:neumorphic_cv/widgets/links_buttons.dart';
+
+import 'components/profile_info_header.dart';
 
 class DarkCV extends StatefulWidget {
   const DarkCV({super.key});
@@ -32,54 +32,49 @@ class _DarkCVState extends State<DarkCV> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Padding(
-                padding: Space.all(1.5),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const ProfilePic(),
-                    Space.x1!,
-                    Expanded(
+              const ProfileInfoHeader(),
+              Divider(
+                height: AppDimensions.height(0.1),
+                thickness: 0.5,
+                color: Colors.white,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: Space.h1!,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Space.y!,
-                          Text(
-                            Env.name,
-                            style: AppText.b2b!.gilda(),
+                          NeumorphicText(
+                            S.aboutMe,
+                            textStyle: NeumorphicTextStyle(
+                                fontSize: AppDimensions.font(7),
+                                fontFamily: "Gilda",
+                                fontWeight: FontWeight.w400),
                           ),
-                          Space.yf(0.25),
-                          Text(
-                            Env.profession.toUpperCase(),
-                            style: AppText.b3b!.gilda().copyWith(
-                              color: AppColors.lightBlue,
-                              shadows: [
-                                const Shadow(color: AppColors.darkBlue)
-                              ],
+                          Space.yf(0.75),
+                          Card(
+                            elevation: 5,
+                            surfaceTintColor: Colors.white.withOpacity(0.1),
+                            color: Colors.white.withOpacity(0.05),
+                            margin: Space.z,
+                            child: Padding(
+                              padding: Space.all(1),
+                              child: const Text(Env.aboutMe),
                             ),
-                          ),
-                          Space.yf(0.25),
-                          SizedBox(
-                            width: AppDimensions.width(60),
-                            child: Text(
-                              Env.address,
-                              style: AppText.l1b,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              const LinksButtons(type: LinkButtonType.git),
-                              Space.x!,
-                              const LinksButtons(type: LinkButtonType.linkedIn),
-                              Space.x!,
-                              const LinksButtons(type: LinkButtonType.gmail),
-                            ],
                           )
                         ],
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Column(),
+                  )
+                ],
               )
             ],
           ),
