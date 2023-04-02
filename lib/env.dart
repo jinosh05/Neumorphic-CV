@@ -80,21 +80,23 @@ Tamil Nadu, India
       'position': "Flutter Intern",
       'duration': "Jan-May 2021",
       'experience': """
-* Developed an E-commerce Food Delivery app
-* Published Apps in Playstore
+* Developed UI
+* Learnt and Developed Firebase, Map, etc..
 """,
-      'site': 'https://excrin.com/'
+      'site': 'https://excrin.com/',
+      'btnTitle': 'excrin.com'
     },
     {
       "company": "Excrin ThinkLabs",
       'logo': Assets.excrin,
-      'position': "Flutter Intern",
-      'duration': "Jan-May 2021",
+      'position': "Flutter Developer",
+      'duration': "06/2021-06/2022",
       'experience': """
 * Developed an E-commerce Food Delivery app
 * Published Apps in Playstore
 """,
-      'site': 'https://excrin.com/'
+      'site': 'https://excrin.com/',
+      'btnTitle': 'excrin.com'
     },
   ];
 }

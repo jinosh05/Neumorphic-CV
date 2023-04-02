@@ -143,7 +143,7 @@ class _ExperienceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Neumorphic(
-      margin: Space.z!,
+      margin: Space.z!.b(1.5),
       padding: Space.all(),
       style: NeumorphicStyle(
         shape: NeumorphicShape.concave,
@@ -189,23 +189,23 @@ class _ExperienceCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Excrin ThinkLabs".toUpperCase(),
+                  data['company'].toUpperCase(),
                   style: AppText.l1b,
                 ),
                 Padding(
                   padding: Space.vf(0.25),
                   child: Text(
-                    "Flutter Intern".toUpperCase(),
+                    data['position'].toUpperCase(),
                     style: AppText.l1b,
                   ),
                 ),
                 Text(
-                  "Jan-May 2021",
+                  data['duration'],
                   style: AppText.l1b,
                 ),
                 NeumorphicButton(
                   onPressed: () async {
-                    String url = '';
+                    String url = data['site'];
                     if (await canLaunchUrl(Uri.parse(url))) {
                       launchUrl(Uri.parse(url));
                     }
@@ -221,7 +221,7 @@ class _ExperienceCard extends StatelessWidget {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Text(
-                        "excrine.com",
+                        data['btnTitle'],
                         style: AppText.l1!,
                       ),
                     ],
@@ -232,7 +232,7 @@ class _ExperienceCard extends StatelessWidget {
           )),
           Expanded(
             child: Text(
-              "Started my career with the Internship which I got from Excrin and was really useful",
+              data['experience'],
               textAlign: TextAlign.left,
               style: AppText.l1,
             ),
