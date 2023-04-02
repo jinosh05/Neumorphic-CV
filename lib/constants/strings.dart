@@ -6,7 +6,7 @@ class S {
 
   static const String skills = "Skills";
 
-  // static const String a = "";
+  static const String communication = "Communication";
 
   // static const String a = "";
 
