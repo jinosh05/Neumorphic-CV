@@ -84,7 +84,18 @@ class _DarkCVState extends State<DarkCV> {
                             SkillWidget(
                               name: Env.skills[i]['name'],
                               rating: Env.skills[i]['rating'],
-                            )
+                            ),
+                          Space.y2!,
+                          Text(
+                            S.software.toUpperCase(),
+                            style: AppText.b3b!.gilda().copyWith(
+                              color: AppColors.red,
+                              shadows: [
+                                const Shadow(
+                                    blurRadius: 0.5, color: AppColors.yellow)
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
