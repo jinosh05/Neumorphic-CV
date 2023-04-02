@@ -1,6 +1,7 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
+import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
@@ -112,7 +113,31 @@ class _DarkCVState extends State<DarkCV> {
                   ),
                   Expanded(
                     flex: 3,
-                    child: Column(),
+                    child: Padding(
+                      padding: Space.z!.r(1),
+                      child: Column(
+                        children: [
+                          NeumorphicButton(
+                            margin: Space.z,
+                            padding: Space.all(),
+                            onPressed: () {},
+                            style: NeumorphicStyle(
+                              shape: NeumorphicShape.concave,
+                              shadowLightColor: Colors.black,
+                              shadowDarkColor: AppColors.black2,
+                              depth: AppDimensions.normalize(1),
+                              color: AppColors.black5,
+                              border: const NeumorphicBorder(
+                                  color: AppColors.black5),
+                              lightSource: LightSource.top,
+                            ),
+                            child: Row(
+                              children: const [],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   )
                 ],
               )
