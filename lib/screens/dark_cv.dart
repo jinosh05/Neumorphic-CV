@@ -135,7 +135,12 @@ class _DarkCVState extends State<DarkCV> {
                           for (var i = 0; i < Env.experiences.length; i++)
                             _ExperienceCard(Env.experiences[i]),
                           Space.y1!,
-                          const _LanguageButton("Tamil"),
+                          Wrap(
+                            children: [
+                              for (var i = 0; i < Env.languages.length; i++)
+                                _LanguageButton(Env.languages[i]),
+                            ],
+                          )
                         ],
                       ),
                     ),
@@ -167,8 +172,8 @@ class _LanguageButton extends StatelessWidget {
         ),
       ),
       child: Container(
-        width: AppDimensions.normalize(25),
-        height: AppDimensions.normalize(25),
+        width: AppDimensions.normalize(28),
+        height: AppDimensions.normalize(28),
         alignment: Alignment.center,
         decoration: const BoxDecoration(
           shape: BoxShape.circle,

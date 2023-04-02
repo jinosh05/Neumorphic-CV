@@ -113,6 +113,12 @@ Tamil Nadu, India
       'btnTitle': 'CLT'
     },
   ];
+
+  static const List<String> languages = [
+    "Tamil",
+    "English",
+    "Hindi",
+  ];
 }
 
 
