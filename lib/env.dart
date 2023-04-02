@@ -51,21 +51,25 @@ Tamil Nadu, India
       "name": "Flutter",
       "image": Assets.flutter,
       'rating': 5,
+      'url': "https://flutter.dev/"
     },
     {
       "name": "Firebase",
       "image": Assets.firebase,
       'rating': 4,
+      'url': "https://firebase.google.com/"
     },
     {
       "name": "Python",
       "image": Assets.python,
       'rating': 3,
+      'url': "https://www.python.org/"
     },
     {
       "name": "JS",
       "image": Assets.javascript,
       'rating': 3,
+      'url': "https://www.javascript.com/"
     },
   ];
 }
