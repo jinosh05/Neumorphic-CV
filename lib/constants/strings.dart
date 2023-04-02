@@ -8,11 +8,11 @@ class S {
 
   static const String communication = "Communication";
 
-  // static const String a = "";
+  static const String creativity = "Creativity";
 
-  // static const String a = "";
+  static const String proactivity = "Proactivity";
 
-  // static const String a = "";
+  static const String problemSolving = "Problem Solving";
 
   // static const String a = "";
 

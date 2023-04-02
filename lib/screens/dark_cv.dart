@@ -80,10 +80,11 @@ class _DarkCVState extends State<DarkCV> {
                             ),
                           ),
                           Space.y1!,
-                          const SkillWidget(
-                            name: S.communication,
-                            rating: 5,
-                          )
+                          for (var i = 0; i < Env.skills.length; i++)
+                            SkillWidget(
+                              name: Env.skills[i]['name'],
+                              rating: Env.skills[i]['rating'],
+                            )
                         ],
                       ),
                     ),

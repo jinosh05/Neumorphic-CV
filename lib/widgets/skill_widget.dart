@@ -1,6 +1,7 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
+import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 
 import '../configs/app_typography.dart';
@@ -21,7 +22,7 @@ class SkillWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return NeumorphicButton(
       onPressed: () async {},
-      margin: Space.z,
+      margin: Space.z!.b(0.75),
       padding: Space.all(0.5, 0.35),
       style: NeumorphicStyle(
         depth: AppDimensions.normalize(1),
