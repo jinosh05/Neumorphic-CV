@@ -158,19 +158,36 @@ class _DarkCVState extends State<DarkCV> {
                                         shape: BoxShape.circle),
                                     child: AppImage(
                                       Assets.excrin,
-                                      width: AppDimensions.normalize(20),
+                                      width: AppDimensions.normalize(15),
                                     ),
                                   ),
                                 ),
                                 Expanded(
-                                    flex: 2,
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: const [],
-                                    )),
+                                    child: Padding(
+                                  padding: Space.hf(0.25).l(0.5),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Excrin ThinkLabs".toUpperCase(),
+                                        style: AppText.l1b,
+                                      ),
+                                      Padding(
+                                        padding: Space.vf(0.25),
+                                        child: Text(
+                                          "Flutter Intern".toUpperCase(),
+                                          style: AppText.l1b,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Jan-May 2021",
+                                        style: AppText.l1b,
+                                      ),
+                                    ],
+                                  ),
+                                )),
                                 Expanded(
-                                  flex: 3,
                                   child: Center(
                                     child: Text(
                                       "Started my career with the Internship which I got from Excrin and was really useful",
