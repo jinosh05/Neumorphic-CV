@@ -72,6 +72,31 @@ Tamil Nadu, India
       'url': "https://www.javascript.com/"
     },
   ];
+
+  static const List<Map> experiences = [
+    {
+      "company": "Excrin ThinkLabs",
+      'logo': Assets.excrin,
+      'position': "Flutter Intern",
+      'duration': "Jan-May 2021",
+      'experience': """
+* Developed an E-commerce Food Delivery app
+* Published Apps in Playstore
+""",
+      'site': 'https://excrin.com/'
+    },
+    {
+      "company": "Excrin ThinkLabs",
+      'logo': Assets.excrin,
+      'position': "Flutter Intern",
+      'duration': "Jan-May 2021",
+      'experience': """
+* Developed an E-commerce Food Delivery app
+* Published Apps in Playstore
+""",
+      'site': 'https://excrin.com/'
+    },
+  ];
 }
 
 
