@@ -46,6 +46,7 @@ class _DarkCVState extends State<DarkCV> {
                 color: Colors.white,
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
                     flex: 2,
@@ -119,7 +120,17 @@ class _DarkCVState extends State<DarkCV> {
                     child: Padding(
                       padding: Space.z!.r(1),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          Space.y!,
+                          NeumorphicText(
+                            S.experience,
+                            textStyle: NeumorphicTextStyle(
+                                fontSize: AppDimensions.font(7),
+                                fontFamily: "Gilda",
+                                fontWeight: FontWeight.w400),
+                          ),
+                          Space.yf(0.75),
                           for (var i = 0; i < Env.experiences.length; i++)
                             _ExperienceCard(Env.experiences[i]),
                         ],
