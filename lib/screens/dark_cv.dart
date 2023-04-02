@@ -15,6 +15,7 @@ import '../widgets/skill_widget.dart';
 import 'components/profile_info_header.dart';
 
 part 'components/experience_card.dart';
+part 'components/language_button.dart';
 
 class DarkCV extends StatefulWidget {
   const DarkCV({super.key});
@@ -136,6 +137,8 @@ class _DarkCVState extends State<DarkCV> {
                             _ExperienceCard(Env.experiences[i]),
                           Space.y1!,
                           Wrap(
+                            spacing: AppDimensions.normalize(7),
+                            runSpacing: AppDimensions.normalize(7),
                             children: [
                               for (var i = 0; i < Env.languages.length; i++)
                                 _LanguageButton(Env.languages[i]),
@@ -149,38 +152,6 @@ class _DarkCVState extends State<DarkCV> {
               )
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _LanguageButton extends StatelessWidget {
-  const _LanguageButton(this.language);
-  final String language;
-
-  @override
-  Widget build(BuildContext context) {
-    return Neumorphic(
-      margin: Space.z!,
-      style: NeumorphicStyle(
-        color: AppColors.black6,
-        boxShape: const NeumorphicBoxShape.circle(),
-        border: NeumorphicBorder(
-          color: AppColors.lightBlue,
-          width: AppDimensions.normalize(2),
-        ),
-      ),
-      child: Container(
-        width: AppDimensions.normalize(28),
-        height: AppDimensions.normalize(28),
-        alignment: Alignment.center,
-        decoration: const BoxDecoration(
-          shape: BoxShape.circle,
-        ),
-        child: Text(
-          language,
-          style: AppText.b3b,
         ),
       ),
     );

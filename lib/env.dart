@@ -81,7 +81,7 @@ Tamil Nadu, India
       'duration': "Jan-May 2021",
       'experience': """
 * Developed UI
-* Learnt and Developed Firebase, Map, etc..
+* Learn't and Developed Firebase, Map, etc..
 """,
       'site': 'https://excrin.com/',
       'btnTitle': 'excrin.com'
