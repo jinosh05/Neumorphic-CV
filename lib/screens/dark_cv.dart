@@ -119,12 +119,14 @@ class _DarkCVState extends State<DarkCV> {
                       padding: Space.z!.r(1),
                       child: Column(
                         children: [
-                          NeumorphicButton(
-                            margin: Space.z,
+                          Neumorphic(
+                            margin: Space.z!,
                             padding: Space.all(),
-                            onPressed: () {},
                             style: NeumorphicStyle(
                               shape: NeumorphicShape.concave,
+                              boxShape: NeumorphicBoxShape.roundRect(
+                                  BorderRadius.circular(
+                                      AppDimensions.normalize(7))),
                               shadowLightColor: Colors.black,
                               shadowDarkColor: AppColors.black2,
                               depth: AppDimensions.normalize(1),
@@ -136,27 +138,30 @@ class _DarkCVState extends State<DarkCV> {
                             child: Row(
                               children: [
                                 Neumorphic(
-                                    margin: Space.z!,
-                                    padding: Space.all(0.2),
-                                    style: const NeumorphicStyle(
-                                      boxShape: NeumorphicBoxShape.circle(),
-                                      shape: NeumorphicShape.flat,
-                                      depth: 0.6,
-                                      intensity: 0.75,
-                                      color: AppColors.black4,
-                                      border: NeumorphicBorder(
-                                          color: AppColors.black5),
-                                      lightSource: LightSource.top,
+                                  margin: Space.z!,
+                                  padding: Space.all(0.2),
+                                  style: NeumorphicStyle(
+                                    boxShape: const NeumorphicBoxShape.circle(),
+                                    shape: NeumorphicShape.flat,
+                                    depth: AppDimensions.normalize(5),
+                                    intensity: 0.9,
+                                    shadowDarkColor: Colors.black,
+                                    shadowLightColor: AppColors.black5,
+                                    color: AppColors.black4,
+                                    border: const NeumorphicBorder(
+                                        color: AppColors.black5),
+                                    lightSource: LightSource.top,
+                                  ),
+                                  child: Container(
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: const BoxDecoration(
+                                        shape: BoxShape.circle),
+                                    child: AppImage(
+                                      Assets.excrin,
+                                      width: AppDimensions.normalize(20),
                                     ),
-                                    child: Container(
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: const BoxDecoration(
-                                          shape: BoxShape.circle),
-                                      child: AppImage(
-                                        Assets.excrin,
-                                        width: AppDimensions.normalize(25),
-                                      ),
-                                    )),
+                                  ),
+                                ),
                               ],
                             ),
                           )
