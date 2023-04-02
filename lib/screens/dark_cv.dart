@@ -134,6 +134,8 @@ class _DarkCVState extends State<DarkCV> {
                           Space.yf(0.75),
                           for (var i = 0; i < Env.experiences.length; i++)
                             _ExperienceCard(Env.experiences[i]),
+                          Space.y1!,
+                          const _LanguageButton("Tamil"),
                         ],
                       ),
                     ),
@@ -142,6 +144,38 @@ class _DarkCVState extends State<DarkCV> {
               )
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _LanguageButton extends StatelessWidget {
+  const _LanguageButton(this.language);
+  final String language;
+
+  @override
+  Widget build(BuildContext context) {
+    return Neumorphic(
+      margin: Space.z!,
+      style: NeumorphicStyle(
+        color: AppColors.black6,
+        boxShape: const NeumorphicBoxShape.circle(),
+        border: NeumorphicBorder(
+          color: AppColors.lightBlue,
+          width: AppDimensions.normalize(2),
+        ),
+      ),
+      child: Container(
+        width: AppDimensions.normalize(25),
+        height: AppDimensions.normalize(25),
+        alignment: Alignment.center,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+        ),
+        child: Text(
+          language,
+          style: AppText.b3b,
         ),
       ),
     );

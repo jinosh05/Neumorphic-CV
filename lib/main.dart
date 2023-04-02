@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/screens/dark_cv.dart';
 
 import 'configs/app.dart';
@@ -34,13 +34,14 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        themeMode: ThemeMode.dark,
-        theme: AppTheme.theme.copyWith(),
-        debugShowCheckedModeBanner: false,
-        builder: (context, child) {
-          App.init(context);
-          return child!;
-        },
-        home: const DarkCV());
+      themeMode: ThemeMode.dark,
+      theme: AppTheme.theme.copyWith(),
+      debugShowCheckedModeBanner: false,
+      builder: (context, child) {
+        App.init(context);
+        return child ?? const SizedBox();
+      },
+      home: const DarkCV(),
+    );
   }
 }

@@ -13,6 +13,8 @@ class AppColors {
 
   static const Color black6 = Color(0xff202122);
 
+  static const Color lightBlack = Color(0xff32363B);
+
   static const Color lightBlue = Color(0xff11A8FD);
 
   static const Color darkBlue = Color(0xff005696);
@@ -22,6 +24,6 @@ class AppColors {
   static const Color yellow = Color(0xffF9D423);
 }
 
-// background: #202122;
+// background: #32363B;
 
 //  static const Color a = Color(0xff);
