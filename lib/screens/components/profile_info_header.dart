@@ -7,6 +7,8 @@ import 'package:neumorphic_cv/constants/enums.dart';
 import 'package:neumorphic_cv/env.dart';
 import 'package:neumorphic_cv/widgets/links_buttons.dart';
 
+import 'profile_pic.dart';
+
 class ProfileInfoHeader extends StatelessWidget {
   const ProfileInfoHeader({
     super.key,
