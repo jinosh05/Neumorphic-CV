@@ -103,6 +103,7 @@ class _DarkCVState extends State<DarkCV> {
                               name: Env.softwares[i]['name'],
                               image: Env.softwares[i]['image'],
                               rating: Env.softwares[i]['rating'],
+                              url: Env.softwares[i]['url'],
                             ),
                           Space.yf(3),
                         ],
