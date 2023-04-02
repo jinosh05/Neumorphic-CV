@@ -18,6 +18,10 @@ class Assets {
   static const String python = "${_iconBase}python.svg";
 
   static const String javascript = "${_iconBase}javascript.png";
+
+  static const String excrin = "${_iconBase}excrin.jpeg";
+
+  static const String clt = "${_iconBase}clt.jpeg";
 }
 
 
