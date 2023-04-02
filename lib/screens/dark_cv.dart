@@ -3,7 +3,6 @@ import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
-import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
@@ -188,7 +187,7 @@ class _ExperienceCard extends StatelessWidget {
               clipBehavior: Clip.antiAlias,
               decoration: const BoxDecoration(shape: BoxShape.circle),
               child: AppImage(
-                Assets.excrin,
+                data['logo'],
                 width: AppDimensions.normalize(15),
               ),
             ),
