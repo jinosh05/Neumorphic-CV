@@ -45,6 +45,29 @@ Tamil Nadu, India
       'rating': 4,
     },
   ];
+
+  static const List<Map> softwares = [
+    {
+      "name": "Flutter",
+      "image": Assets.flutter,
+      'rating': 5,
+    },
+    {
+      "name": "Firebase",
+      "image": Assets.firebase,
+      'rating': 4,
+    },
+    {
+      "name": "Python",
+      "image": Assets.python,
+      'rating': 3,
+    },
+    {
+      "name": "JavaScript",
+      "image": Assets.javascript,
+      'rating': 3,
+    },
+  ];
 }
 
 
