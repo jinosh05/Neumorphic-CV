@@ -3,6 +3,7 @@ import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../configs/app_typography.dart';
 import 'app_image.dart';
@@ -13,10 +14,11 @@ class SoftwareWidget extends StatelessWidget {
     required this.image,
     this.name,
     required this.rating,
+    this.url,
   }) : assert(rating <= 5 && rating >= 0, "Value can't be other than 0 to 5");
 
   final String image;
-  final String? name;
+  final String? name, url;
 
   /// [rating] can be only less than or equal to 5
   final int rating;
@@ -24,7 +26,13 @@ class SoftwareWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NeumorphicButton(
-      onPressed: () async {},
+      onPressed: () async {
+        if (url != null) {
+          if (await canLaunchUrl(Uri.parse(url!))) {
+            launchUrl(Uri.parse(url!));
+          }
+        }
+      },
       margin: Space.z!.b(0.75),
       padding: Space.all(0.5, 0.35),
       style: NeumorphicStyle(

@@ -100,9 +100,11 @@ class _DarkCVState extends State<DarkCV> {
                           Space.y1!,
                           for (var i = 0; i < Env.softwares.length; i++)
                             SoftwareWidget(
-                                name: Env.softwares[i]['name'],
-                                image: Env.softwares[i]['image'],
-                                rating: Env.softwares[i]['rating'])
+                              name: Env.softwares[i]['name'],
+                              image: Env.softwares[i]['image'],
+                              rating: Env.softwares[i]['rating'],
+                            ),
+                          Space.yf(3),
                         ],
                       ),
                     ),
