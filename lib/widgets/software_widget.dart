@@ -1,11 +1,11 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 
 import '../configs/app_typography.dart';
+import 'app_image.dart';
 
 class SoftwareWidget extends StatelessWidget {
   const SoftwareWidget({
@@ -37,7 +37,7 @@ class SoftwareWidget extends StatelessWidget {
           Expanded(
             child: Row(
               children: [
-                SvgPicture.asset(
+                AppImage(
                   image,
                   height: AppDimensions.space(1),
                 ),

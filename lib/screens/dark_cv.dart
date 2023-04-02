@@ -2,7 +2,6 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
-import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
@@ -99,8 +98,11 @@ class _DarkCVState extends State<DarkCV> {
                             ),
                           ),
                           Space.y1!,
-                          const SoftwareWidget(
-                              name: "Flutter", image: Assets.flutter, rating: 5)
+                          for (var i = 0; i < Env.softwares.length; i++)
+                            SoftwareWidget(
+                                name: Env.softwares[i]['name'],
+                                image: Env.softwares[i]['image'],
+                                rating: Env.softwares[i]['rating'])
                         ],
                       ),
                     ),

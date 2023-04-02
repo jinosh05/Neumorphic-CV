@@ -63,7 +63,7 @@ Tamil Nadu, India
       'rating': 3,
     },
     {
-      "name": "JavaScript",
+      "name": "JS",
       "image": Assets.javascript,
       'rating': 3,
     },
