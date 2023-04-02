@@ -81,7 +81,7 @@ class _DarkCVState extends State<DarkCV> {
                           Space.y1!,
                           const SkillWidget(
                             name: S.communication,
-                            rating: 0,
+                            rating: 5,
                           )
                         ],
                       ),
@@ -106,7 +106,7 @@ class SkillWidget extends StatelessWidget {
     super.key,
     required this.name,
     required this.rating,
-  });
+  }) : assert(rating <= 5 && rating >= 0, "Value can't be other than 0 to 5");
 
   final String name;
 
