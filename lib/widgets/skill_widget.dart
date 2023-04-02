@@ -20,8 +20,7 @@ class SkillWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return NeumorphicButton(
-      onPressed: () async {},
+    return Neumorphic(
       margin: Space.z!.b(0.75),
       padding: Space.all(0.5, 0.35),
       style: NeumorphicStyle(

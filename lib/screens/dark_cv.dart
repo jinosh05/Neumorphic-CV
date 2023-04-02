@@ -3,9 +3,11 @@ import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
+import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
+import 'package:neumorphic_cv/widgets/app_image.dart';
 import 'package:neumorphic_cv/widgets/software_widget.dart';
 
 import '../configs/app_typography.dart';
@@ -132,7 +134,30 @@ class _DarkCVState extends State<DarkCV> {
                               lightSource: LightSource.top,
                             ),
                             child: Row(
-                              children: const [],
+                              children: [
+                                Neumorphic(
+                                    margin: Space.z!,
+                                    padding: Space.all(0.2),
+                                    style: const NeumorphicStyle(
+                                      boxShape: NeumorphicBoxShape.circle(),
+                                      shape: NeumorphicShape.flat,
+                                      depth: 0.6,
+                                      intensity: 0.75,
+                                      color: AppColors.black4,
+                                      border: NeumorphicBorder(
+                                          color: AppColors.black5),
+                                      lightSource: LightSource.top,
+                                    ),
+                                    child: Container(
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: const BoxDecoration(
+                                          shape: BoxShape.circle),
+                                      child: AppImage(
+                                        Assets.excrin,
+                                        width: AppDimensions.normalize(25),
+                                      ),
+                                    )),
+                              ],
                             ),
                           )
                         ],
