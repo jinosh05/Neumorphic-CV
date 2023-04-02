@@ -98,6 +98,20 @@ Tamil Nadu, India
       'site': 'https://excrin.com/',
       'btnTitle': 'excrin.com'
     },
+    {
+      "company": "Connective Links Technology",
+      'logo': Assets.clt,
+      'position': "Flutter Developer",
+      'duration': "07/2022 - Current",
+      'experience': """
+* Developed 2 E-commerce based Apps
+* Published Apps in AppStore, PlayStore
+* An ERP Based App
+* A Delivery Boy App
+""",
+      'site': 'https://connectivelinkstechnology.com/',
+      'btnTitle': 'CLT'
+    },
   ];
 }
 
