@@ -162,6 +162,23 @@ class _DarkCVState extends State<DarkCV> {
                                     ),
                                   ),
                                 ),
+                                Expanded(
+                                    flex: 2,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [],
+                                    )),
+                                Expanded(
+                                  flex: 3,
+                                  child: Center(
+                                    child: Text(
+                                      "Started my career with the Internship which I got from Excrin and was really useful",
+                                      textAlign: TextAlign.left,
+                                      style: AppText.l1,
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           )
