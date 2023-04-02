@@ -99,9 +99,8 @@ class ProfilePic extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return NeumorphicButton(
-      onPressed: () {},
-      margin: Space.z,
+    return Neumorphic(
+      margin: Space.z!,
       padding: Space.all(0.25),
       style: const NeumorphicStyle(
         color: AppColors.black4,
