@@ -2,12 +2,14 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
+import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
-import 'package:neumorphic_cv/widgets/skill_widget.dart';
+import 'package:neumorphic_cv/widgets/software_widget.dart';
 
 import '../configs/app_typography.dart';
+import '../widgets/skill_widget.dart';
 import 'components/profile_info_header.dart';
 
 class DarkCV extends StatefulWidget {
@@ -96,6 +98,9 @@ class _DarkCVState extends State<DarkCV> {
                               ],
                             ),
                           ),
+                          Space.y1!,
+                          const SoftwareWidget(
+                              name: "Flutter", image: Assets.flutter, rating: 5)
                         ],
                       ),
                     ),
