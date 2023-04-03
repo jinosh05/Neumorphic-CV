@@ -80,10 +80,10 @@ class _DarkCVState extends State<DarkCV> {
                           Text(
                             S.skills.toUpperCase(),
                             style: AppText.b3b!.gilda().copyWith(
-                              color: AppColors.darkBlue,
+                              color: AppColors.lightBlue,
                               shadows: [
                                 const Shadow(
-                                    blurRadius: 0.5, color: AppColors.lightBlue)
+                                    blurRadius: 0.5, color: AppColors.darkBlue)
                               ],
                             ),
                           ),
