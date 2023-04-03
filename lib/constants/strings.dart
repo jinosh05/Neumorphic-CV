@@ -18,7 +18,7 @@ class S {
 
   static const String experience = "Previous Experience";
 
-  // static const String a = "";
+  static const String appsDeveloped = "Apps Developed";
 
   // static const String a = "";
 

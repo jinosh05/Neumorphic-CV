@@ -143,7 +143,18 @@ class _DarkCVState extends State<DarkCV> {
                               for (var i = 0; i < Env.languages.length; i++)
                                 _LanguageButton(Env.languages[i]),
                             ],
-                          )
+                          ),
+                          Space.yf(1.5),
+                          Text(
+                            S.appsDeveloped.toUpperCase(),
+                            style: AppText.b3b!.gilda().copyWith(
+                              color: Colors.orange,
+                              shadows: [
+                                const Shadow(
+                                    blurRadius: 0.5, color: AppColors.yellow)
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
