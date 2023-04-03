@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/screens/dark_cv.dart';
 
@@ -5,6 +6,9 @@ import 'configs/app.dart';
 import 'configs/apptheme.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
   await Future.delayed(const Duration(seconds: 1));
   runApp(const MyApp());
 }

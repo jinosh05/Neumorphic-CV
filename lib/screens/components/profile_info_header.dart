@@ -48,13 +48,13 @@ class ProfileInfoHeader extends StatelessWidget {
                     style: AppText.l1b,
                   ),
                 ),
-                Row(
-                  children: [
-                    const LinksButtons(type: LinkButtonType.git),
-                    Space.x!,
-                    const LinksButtons(type: LinkButtonType.linkedIn),
-                    Space.x!,
-                    const LinksButtons(type: LinkButtonType.gmail),
+                Wrap(
+                  spacing: AppDimensions.space(),
+                  runSpacing: AppDimensions.space(),
+                  children: const [
+                    LinksButtons(type: LinkButtonType.git),
+                    LinksButtons(type: LinkButtonType.linkedIn),
+                    LinksButtons(type: LinkButtonType.gmail),
                   ],
                 )
               ],
