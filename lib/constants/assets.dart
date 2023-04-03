@@ -22,6 +22,16 @@ class Assets {
   static const String excrin = "${_iconBase}excrin.jpeg";
 
   static const String clt = "${_iconBase}clt.jpeg";
+
+  static const String appstore = "${_iconBase}app-store.svg";
+
+  static const String b2b = "${_iconBase}b2b.png";
+
+  static const String doclense = "${_iconBase}doclense.png";
+
+  static const String gdo = "${_iconBase}gdo.png";
+
+  static const String playstore = "${_iconBase}google-play-store.svg";
 }
 
 
