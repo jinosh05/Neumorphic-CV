@@ -112,7 +112,6 @@ class _DarkCVState extends State<DarkCV> {
                               rating: Env.softwares[i]['rating'],
                               url: Env.softwares[i]['url'],
                             ),
-                          Space.yf(3),
                         ],
                       ),
                     ),
@@ -165,7 +164,8 @@ class _DarkCVState extends State<DarkCV> {
                     ),
                   )
                 ],
-              )
+              ),
+              Space.yf(1.5),
             ],
           ),
         ),
