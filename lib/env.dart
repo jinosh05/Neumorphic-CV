@@ -127,11 +127,12 @@ Tamil Nadu, India
       'links': [
         {
           'icon': Assets.appstore,
-          'url': "",
+          'url': "https://apps.apple.com/us/app/gdo-gifts/id6444722893",
         },
         {
           'icon': Assets.playstore,
-          'url': "",
+          'url':
+              "https://play.google.com/store/apps/details?id=com.clt.gdogifts",
         },
       ]
     },
@@ -141,7 +142,7 @@ Tamil Nadu, India
       'links': [
         {
           'icon': Assets.playstore,
-          'url': "",
+          'url': "https://play.google.com/store/apps/details?id=com.fluttr.b2b",
         },
       ]
     },
@@ -151,7 +152,7 @@ Tamil Nadu, India
       'links': [
         {
           'icon': Assets.gitIcon,
-          'url': "",
+          'url': "https://github.com/jinosh05/DocLense",
         },
       ]
     },
