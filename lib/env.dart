@@ -119,6 +119,43 @@ Tamil Nadu, India
     "English",
     "Hindi",
   ];
+
+  static const List<Map> appsInfo = [
+    {
+      'img': Assets.gdo,
+      'name': "GDO Gifts",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url': "",
+        },
+        {
+          'icon': Assets.playstore,
+          'url': "",
+        },
+      ]
+    },
+    {
+      'img': Assets.b2b,
+      'name': "B2B Purchase",
+      'links': [
+        {
+          'icon': Assets.playstore,
+          'url': "",
+        },
+      ]
+    },
+    {
+      'img': Assets.doclense,
+      'name': "Doclense",
+      'links': [
+        {
+          'icon': Assets.gitIcon,
+          'url': "",
+        },
+      ]
+    },
+  ];
 }
 
 
