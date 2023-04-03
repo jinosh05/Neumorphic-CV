@@ -217,7 +217,10 @@ class AppInfoWidget extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Neumorphic(
             margin: Space.v!,
-            style: const NeumorphicStyle(boxShape: NeumorphicBoxShape.circle()),
+            style: const NeumorphicStyle(
+                lightSource: LightSource.left,
+                color: Colors.white,
+                boxShape: NeumorphicBoxShape.circle()),
             child: Container(
               clipBehavior: Clip.antiAlias,
               padding: Space.all(1),
