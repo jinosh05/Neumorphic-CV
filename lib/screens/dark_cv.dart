@@ -10,7 +10,6 @@ import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
 import 'package:neumorphic_cv/widgets/app_image.dart';
 import 'package:neumorphic_cv/widgets/software_widget.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../configs/app_typography.dart';
 import '../widgets/skill_widget.dart';
@@ -158,100 +157,10 @@ class _DarkCVState extends State<DarkCV> {
                             ),
                           ),
                           Space.y1!,
-                          Stack(
-                            alignment: Alignment.center,
-                            clipBehavior: Clip.none,
-                            children: [
-                              Neumorphic(
-                                style: NeumorphicStyle(
-                                  shape: NeumorphicShape.flat,
-                                  boxShape: NeumorphicBoxShape.roundRect(
-                                      BorderRadius.circular(
-                                          AppDimensions.normalize(2))),
-                                  depth: AppDimensions.normalize(1),
-                                  color: AppColors.black5,
-                                  border: const NeumorphicBorder(
-                                      color: AppColors.black5),
-                                  lightSource: LightSource.top,
-                                ),
-                                margin: Space.z!.l(1).r(1),
-                                padding: Space.all(),
-                                child: Row(
-                                  children: [
-                                    Space.xf(3.5),
-                                    Expanded(
-                                      child: Text(
-                                        "GDO Gifts",
-                                        style: AppText.b2b,
-                                      ),
-                                    ),
-                                    Space.xf(6),
-                                  ],
-                                ),
-                              ),
-                              Align(
-                                alignment: Alignment.centerLeft,
-                                child: Neumorphic(
-                                  style: const NeumorphicStyle(
-                                      boxShape: NeumorphicBoxShape.circle()),
-                                  child: Container(
-                                    clipBehavior: Clip.antiAlias,
-                                    padding: Space.all(1),
-                                    decoration: const BoxDecoration(
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: AppImage(
-                                      Assets.gdo,
-                                      width: AppDimensions.space(2),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                  NeumorphicButton(
-                                    margin: Space.hf(0.25),
-                                    padding: Space.all(),
-                                    onPressed: () {},
-                                    style: const NeumorphicStyle(
-                                        color: AppColors.black4,
-                                        boxShape: NeumorphicBoxShape.circle()),
-                                    child: Container(
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: const BoxDecoration(
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: AppImage(
-                                        Assets.appstore,
-                                        width: AppDimensions.space(1.5),
-                                      ),
-                                    ),
-                                  ),
-                                  NeumorphicButton(
-                                    margin: Space.hf(0.25),
-                                    padding: Space.all(),
-                                    onPressed: () async {
-                                      await launchLink("");
-                                    },
-                                    style: const NeumorphicStyle(
-                                        color: AppColors.black4,
-                                        boxShape: NeumorphicBoxShape.circle()),
-                                    child: Container(
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: const BoxDecoration(
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: AppImage(
-                                        Assets.playstore,
-                                        width: AppDimensions.space(1.5),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          )
+                          for (var i = 0; i < Env.appsInfo.length; i++)
+                            AppInfoWidget(
+                              data: Env.appsInfo[i],
+                            )
                         ],
                       ),
                     ),
@@ -262,6 +171,111 @@ class _DarkCVState extends State<DarkCV> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class AppInfoWidget extends StatelessWidget {
+  const AppInfoWidget({
+    super.key,
+    required this.data,
+  });
+
+  final Map data;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      alignment: Alignment.center,
+      clipBehavior: Clip.none,
+      children: [
+        Neumorphic(
+          style: NeumorphicStyle(
+            shape: NeumorphicShape.flat,
+            boxShape: NeumorphicBoxShape.roundRect(
+                BorderRadius.circular(AppDimensions.normalize(2))),
+            depth: AppDimensions.normalize(1),
+            color: AppColors.black5,
+            border: const NeumorphicBorder(color: AppColors.black5),
+            lightSource: LightSource.top,
+          ),
+          margin: Space.z!.l(1).r(1),
+          padding: Space.all(),
+          child: Row(
+            children: [
+              Space.xf(3.5),
+              Expanded(
+                child: Text(
+                  "GDO Gifts",
+                  style: AppText.b2b,
+                ),
+              ),
+              Space.xf(6),
+            ],
+          ),
+        ),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Neumorphic(
+            margin: Space.v!,
+            style: const NeumorphicStyle(boxShape: NeumorphicBoxShape.circle()),
+            child: Container(
+              clipBehavior: Clip.antiAlias,
+              padding: Space.all(1),
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+              ),
+              child: AppImage(
+                Assets.gdo,
+                width: AppDimensions.space(2),
+              ),
+            ),
+          ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            NeumorphicButton(
+              margin: Space.hf(0.25),
+              padding: Space.all(),
+              onPressed: () {},
+              style: const NeumorphicStyle(
+                  color: AppColors.black4,
+                  boxShape: NeumorphicBoxShape.circle()),
+              child: Container(
+                clipBehavior: Clip.antiAlias,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                ),
+                child: AppImage(
+                  Assets.appstore,
+                  width: AppDimensions.space(1.5),
+                ),
+              ),
+            ),
+            NeumorphicButton(
+              margin: Space.hf(0.25),
+              padding: Space.all(),
+              onPressed: () async {
+                await launchLink("");
+              },
+              style: const NeumorphicStyle(
+                  color: AppColors.black4,
+                  boxShape: NeumorphicBoxShape.circle()),
+              child: Container(
+                clipBehavior: Clip.antiAlias,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                ),
+                child: AppImage(
+                  Assets.playstore,
+                  width: AppDimensions.space(1.5),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
