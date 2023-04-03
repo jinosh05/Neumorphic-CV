@@ -4,7 +4,6 @@ import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/configs/ui.dart';
 import 'package:neumorphic_cv/configs/util_methods.dart';
-import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
@@ -206,7 +205,7 @@ class AppInfoWidget extends StatelessWidget {
               Space.xf(3.5),
               Expanded(
                 child: Text(
-                  "GDO Gifts",
+                  data['name'],
                   style: AppText.b2b,
                 ),
               ),
@@ -226,7 +225,7 @@ class AppInfoWidget extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: AppImage(
-                Assets.gdo,
+                data['img'],
                 width: AppDimensions.space(2),
               ),
             ),
@@ -235,44 +234,27 @@ class AppInfoWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            NeumorphicButton(
-              margin: Space.hf(0.25),
-              padding: Space.all(),
-              onPressed: () {},
-              style: const NeumorphicStyle(
-                  color: AppColors.black4,
-                  boxShape: NeumorphicBoxShape.circle()),
-              child: Container(
-                clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                ),
-                child: AppImage(
-                  Assets.appstore,
-                  width: AppDimensions.space(1.5),
-                ),
-              ),
-            ),
-            NeumorphicButton(
-              margin: Space.hf(0.25),
-              padding: Space.all(),
-              onPressed: () async {
-                await launchLink("");
-              },
-              style: const NeumorphicStyle(
-                  color: AppColors.black4,
-                  boxShape: NeumorphicBoxShape.circle()),
-              child: Container(
-                clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                ),
-                child: AppImage(
-                  Assets.playstore,
-                  width: AppDimensions.space(1.5),
+            for (var i = 0; i < data['links'].length; i++)
+              NeumorphicButton(
+                margin: Space.hf(0.25),
+                padding: Space.all(),
+                onPressed: () async {
+                  await launchLink(data['links'][i]['url']);
+                },
+                style: const NeumorphicStyle(
+                    color: AppColors.black4,
+                    boxShape: NeumorphicBoxShape.circle()),
+                child: Container(
+                  clipBehavior: Clip.antiAlias,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: AppImage(
+                    data['links'][i]['icon'],
+                    width: AppDimensions.space(1.5),
+                  ),
                 ),
               ),
-            ),
           ],
         ),
       ],
