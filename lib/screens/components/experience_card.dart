@@ -69,10 +69,7 @@ class _ExperienceCard extends StatelessWidget {
                 ),
                 NeumorphicButton(
                   onPressed: () async {
-                    String url = data['site'];
-                    if (await canLaunchUrl(Uri.parse(url))) {
-                      launchUrl(Uri.parse(url));
-                    }
+                    await launchLink(data['site']);
                   },
                   margin: Space.z!.t(0.75),
                   padding: Space.all(0.75, 0.25),

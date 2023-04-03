@@ -3,11 +3,11 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/configs/space.dart';
+import 'package:neumorphic_cv/configs/util_methods.dart';
 import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/enums.dart';
 import 'package:neumorphic_cv/env.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class LinksButtons extends StatelessWidget {
   const LinksButtons({
@@ -21,10 +21,7 @@ class LinksButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return NeumorphicButton(
       onPressed: () async {
-        String url = getURL();
-        if (await canLaunchUrl(Uri.parse(url))) {
-          launchUrl(Uri.parse(url));
-        }
+        await launchLink(getURL());
       },
       margin: Space.z,
       padding: Space.all(0.5, 0.35),

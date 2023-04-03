@@ -3,9 +3,9 @@ import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/space_ext.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../configs/app_typography.dart';
+import '../configs/util_methods.dart';
 import 'app_image.dart';
 
 class SoftwareWidget extends StatelessWidget {
@@ -28,9 +28,7 @@ class SoftwareWidget extends StatelessWidget {
     return NeumorphicButton(
       onPressed: () async {
         if (url != null) {
-          if (await canLaunchUrl(Uri.parse(url!))) {
-            launchUrl(Uri.parse(url!));
-          }
+          await launchLink(url);
         }
       },
       margin: Space.z!.b(0.75),
