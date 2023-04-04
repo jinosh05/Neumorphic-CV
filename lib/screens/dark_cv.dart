@@ -143,9 +143,32 @@ class _DarkCVState extends State<DarkCV> {
                                   ),
                                 ),
                                 padding: Space.all(0.75),
-                                child: Text(
-                                  "Flutter Bloc",
-                                  style: AppText.b2b,
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: Space.all(),
+                                      margin: Space.z!.r(0.5),
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        boxShadow: [
+                                          const BoxShadow(
+                                            color: Colors.red,
+                                          ),
+                                          BoxShadow(
+                                            color: Colors.yellow,
+                                            spreadRadius:
+                                                -AppDimensions.normalize(1),
+                                            blurRadius:
+                                                AppDimensions.normalize(1),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Text(
+                                      "Flutter Bloc",
+                                      style: AppText.b2b,
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
