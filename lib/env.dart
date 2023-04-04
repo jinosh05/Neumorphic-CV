@@ -159,8 +159,15 @@ Tamil Nadu, India
   ];
 
   static const List<String> technicalSkill = [
-    "Flutter Bloc",
-    "MVVM Concept",
+    "Flutter BLOC, Cubit",
+    "MVC, MVVM Pattern",
+    'App Publishing',
+    'Responsive UI',
+    'UniLinks -iOS, Android',
+    'Agile and Robust Development',
+    'Firebase,Map Integration',
+    'Hive,Sqflite Storage',
+    'Flutter Web'
   ];
 }
 

@@ -246,9 +246,11 @@ class _TechnicalCard extends StatelessWidget {
                   ],
                 ),
               ),
-              Text(
-                text,
-                style: AppText.b2b,
+              Expanded(
+                child: Text(
+                  text,
+                  style: AppText.b3b,
+                ),
               ),
             ],
           ),
