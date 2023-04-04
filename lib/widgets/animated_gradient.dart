@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neumorphic_cv/configs/space.dart';
 
 import '../configs/app_dimensions.dart';
 
@@ -109,6 +110,7 @@ class _AnimateGradientState extends State<AnimateGradient>
       animation: _animation,
       builder: (BuildContext context, Widget? child) {
         return Container(
+          margin: Space.vf(0.25),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(
               AppDimensions.normalize(3),

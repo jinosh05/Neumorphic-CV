@@ -157,6 +157,11 @@ Tamil Nadu, India
       ]
     },
   ];
+
+  static const List<String> technicalSkill = [
+    "Flutter Bloc",
+    "MVVM Concept",
+  ];
 }
 
 
