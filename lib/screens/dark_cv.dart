@@ -113,6 +113,20 @@ class _DarkCVState extends State<DarkCV> {
                               rating: Env.softwares[i]['rating'],
                               url: Env.softwares[i]['url'],
                             ),
+                          Space.y1!,
+                          Text(
+                            S.technicalSkills.toUpperCase(),
+                            style: AppText.b3b!.gilda().copyWith(
+                              color: Colors.pink,
+                              shadows: [
+                                const Shadow(
+                                  blurRadius: 1,
+                                  color: Colors.white,
+                                )
+                              ],
+                            ),
+                          ),
+                          Space.y!,
                           Card(
                             elevation: 5,
                             child: AnimateGradient(

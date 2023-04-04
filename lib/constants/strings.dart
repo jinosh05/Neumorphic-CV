@@ -20,38 +20,5 @@ class S {
 
   static const String appsDeveloped = "Apps Developed";
 
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
-
-  // static const String a = "";
+  static const String technicalSkills = "Technical Skills";
 }
-
-
-//   static const String a = "";
