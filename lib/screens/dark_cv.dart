@@ -177,7 +177,26 @@ class _DarkCVState extends State<DarkCV> {
                           for (var i = 0; i < Env.appsInfo.length; i++)
                             AppInfoWidget(
                               data: Env.appsInfo[i],
-                            )
+                            ),
+                          Space.y1!,
+                          Text(
+                            "${S.note.toUpperCase()} :- ",
+                            style: AppText.b3b!.gilda().copyWith(
+                              shadows: [
+                                const Shadow(
+                                    blurRadius: 1, color: AppColors.lightBlue)
+                              ],
+                            ),
+                          ),
+                          Space.y!,
+                          NeumorphicText(
+                            S.noteMsg,
+                            textAlign: TextAlign.left,
+                            textStyle: NeumorphicTextStyle(
+                              fontSize: AppDimensions.font(7),
+                              fontFamily: 'Roboto',
+                            ),
+                          )
                         ],
                       ),
                     ),
