@@ -7,6 +7,7 @@ import 'package:neumorphic_cv/configs/util_methods.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
 import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
+import 'package:neumorphic_cv/widgets/animated_gradient.dart';
 import 'package:neumorphic_cv/widgets/app_image.dart';
 import 'package:neumorphic_cv/widgets/software_widget.dart';
 
@@ -112,6 +113,43 @@ class _DarkCVState extends State<DarkCV> {
                               rating: Env.softwares[i]['rating'],
                               url: Env.softwares[i]['url'],
                             ),
+                          Card(
+                            elevation: 5,
+                            child: AnimateGradient(
+                              primaryBegin: Alignment.centerLeft,
+                              primaryEnd: Alignment.topRight,
+                              secondaryBegin: Alignment.topRight,
+                              secondaryEnd: Alignment.centerLeft,
+                              duration: const Duration(
+                                seconds: 2,
+                              ),
+                              primaryColors: const [
+                                AppColors.lightBlack,
+                                AppColors.black2,
+                                AppColors.black6,
+                                AppColors.black4,
+                              ],
+                              secondaryColors: const [
+                                AppColors.black2,
+                                AppColors.black6,
+                                AppColors.black4,
+                                AppColors.lightBlack,
+                              ],
+                              child: Container(
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(
+                                    AppDimensions.normalize(10),
+                                  ),
+                                ),
+                                padding: Space.all(0.75),
+                                child: Text(
+                                  "Flutter Bloc",
+                                  style: AppText.b2b,
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
