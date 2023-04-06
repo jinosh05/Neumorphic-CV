@@ -3,7 +3,6 @@ import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
-import 'package:neumorphic_cv/constants/enums.dart';
 import 'package:neumorphic_cv/env.dart';
 import 'package:neumorphic_cv/widgets/links_buttons.dart';
 
@@ -51,10 +50,11 @@ class ProfileInfoHeader extends StatelessWidget {
                 Wrap(
                   spacing: AppDimensions.space(),
                   runSpacing: AppDimensions.space(),
-                  children: const [
-                    LinksButtons(type: LinkButtonType.git),
-                    LinksButtons(type: LinkButtonType.linkedIn),
-                    LinksButtons(type: LinkButtonType.gmail),
+                  children: [
+                    for (var i = 0; i < Env.btnlinks.length; i++)
+                      LinksButtons(
+                        data: Env.btnlinks[i],
+                      )
                   ],
                 )
               ],

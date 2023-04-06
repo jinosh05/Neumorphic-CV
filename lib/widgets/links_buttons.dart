@@ -4,24 +4,21 @@ import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/configs/space.dart';
 import 'package:neumorphic_cv/configs/util_methods.dart';
-import 'package:neumorphic_cv/constants/assets.dart';
 import 'package:neumorphic_cv/constants/colors.dart';
-import 'package:neumorphic_cv/constants/enums.dart';
-import 'package:neumorphic_cv/env.dart';
 
 class LinksButtons extends StatelessWidget {
   const LinksButtons({
     super.key,
-    required this.type,
+    required this.data,
   });
 
-  final LinkButtonType type;
+  final Map data;
 
   @override
   Widget build(BuildContext context) {
     return NeumorphicButton(
       onPressed: () async {
-        await launchLink(getURL());
+        await launchLink(data['url']);
       },
       margin: Space.z,
       padding: Space.all(0.5, 0.35),
@@ -35,60 +32,17 @@ class LinksButtons extends StatelessWidget {
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
           SvgPicture.asset(
-            getIcon(),
+            data['icon'],
             height: AppDimensions.font(8),
           ),
           Space.x!,
           Text(
-            getID(),
+            data['id'],
             style: AppText.l1!,
           ),
           Space.x!,
         ],
       ),
     );
-  }
-
-  String getURL() {
-    switch (type) {
-      case LinkButtonType.git:
-        return Env.gitlink;
-      case LinkButtonType.linkedIn:
-        return Env.linkedinLink;
-      case LinkButtonType.gmail:
-        return "mailto:${Env.gmailId}@gmail.com";
-      default:
-        return Env.gitlink;
-    }
-  }
-
-  String getID() {
-    switch (type) {
-      case LinkButtonType.git:
-        return Env.gitID;
-      case LinkButtonType.linkedIn:
-        return Env.linkedID;
-      case LinkButtonType.gmail:
-        return Env.gmailId;
-      case LinkButtonType.phone:
-        return Env.mobile;
-      default:
-        return Env.gitID;
-    }
-  }
-
-  String getIcon() {
-    switch (type) {
-      case LinkButtonType.git:
-        return Assets.gitIcon;
-      case LinkButtonType.linkedIn:
-        return Assets.linkedIn;
-      case LinkButtonType.gmail:
-        return Assets.gmailIcon;
-      case LinkButtonType.phone:
-        return Assets.gmailIcon;
-      default:
-        return Assets.gitIcon;
-    }
   }
 }
