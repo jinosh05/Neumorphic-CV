@@ -27,7 +27,7 @@ Tamil Nadu, India
   static const String gmailId = "jinosh05";
 
   static const String aboutMe =
-      "Hello there and thanks for reviewing my profile . I'm quite an expert in using coding and front-end development using Flutter. I have been developing Web and Mobile apps for the past year and never quitted learning new technologies.";
+      "Hello, and thanks for visiting my profile.Am a Flutter developer with 2+ years of Experience in Flutter with strong knowledge in both Mobile App and Flutter Web Development. If you're looking for a highly skilled and rich experienced mobile expert with deep knowledge, a professional attitude, excellent communication skills and the high code quality, then I'm the person looking for.";
 
   static const List<Map> skills = [
     {
