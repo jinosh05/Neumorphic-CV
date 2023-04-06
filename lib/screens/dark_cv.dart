@@ -79,7 +79,7 @@ class _DarkCVState extends State<DarkCV> {
                               child: const Text(Env.aboutMe),
                             ),
                           ),
-                          Space.y2!,
+                          Space.y1!,
                           Text(
                             S.skills.toUpperCase(),
                             style: AppText.b3b!.gilda().copyWith(
@@ -96,7 +96,7 @@ class _DarkCVState extends State<DarkCV> {
                               name: Env.skills[i]['name'],
                               rating: Env.skills[i]['rating'],
                             ),
-                          Space.y2!,
+                          Space.y1!,
                           Text(
                             S.software.toUpperCase(),
                             style: AppText.b3b!.gilda().copyWith(

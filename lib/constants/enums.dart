@@ -1,5 +1,1 @@
-enum LinkButtonType {
-  git,
-  gmail,
-  linkedIn,
-}
+enum LinkButtonType { git, gmail, linkedIn, phone }

@@ -35,11 +35,11 @@ class _TechnicalCard extends StatelessWidget {
               AppDimensions.normalize(10),
             ),
           ),
-          padding: Space.all(0.75),
+          padding: Space.all(),
           child: Row(
             children: [
               Container(
-                padding: Space.all(),
+                padding: Space.all(0.35),
                 margin: Space.z!.r(0.5),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,

@@ -70,6 +70,8 @@ class LinksButtons extends StatelessWidget {
         return Env.linkedID;
       case LinkButtonType.gmail:
         return Env.gmailId;
+      case LinkButtonType.phone:
+        return Env.mobile;
       default:
         return Env.gitID;
     }
@@ -82,6 +84,8 @@ class LinksButtons extends StatelessWidget {
       case LinkButtonType.linkedIn:
         return Assets.linkedIn;
       case LinkButtonType.gmail:
+        return Assets.gmailIcon;
+      case LinkButtonType.phone:
         return Assets.gmailIcon;
       default:
         return Assets.gitIcon;

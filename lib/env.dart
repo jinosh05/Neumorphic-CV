@@ -18,6 +18,8 @@ Tamil Nadu, India
 
   static const String gitlink = "https://github.com/jinosh05";
 
+  static const String mobile = "+918870358783";
+
   static const String linkedID = "Jinosh D";
 
   static const String linkedinLink = "https://www.linkedin.com/in/jinosh/";
@@ -162,12 +164,11 @@ Tamil Nadu, India
     "Flutter BLOC, Cubit",
     "MVC, MVVM Pattern",
     'App Publishing',
-    'Responsive UI',
     'UniLinks -iOS, Android',
     'Agile and Robust Development',
     'Firebase,Map Integration',
     'Hive,Sqflite Storage',
-    'Flutter Web'
+    'Responsive Flutter Web'
   ];
 }
 
