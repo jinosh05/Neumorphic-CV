@@ -14,6 +14,29 @@ Tondiarpet, Chennai-81,
 Tamil Nadu, India
 """;
 
+  static const List<Map> btnlinks = [
+    {
+      'url': "https://github.com/jinosh05",
+      'id': "jinosh05",
+      'icon': Assets.gitIcon
+    },
+    {
+      'url': "https://www.linkedin.com/in/jinosh/",
+      'id': "Jinosh D",
+      'icon': Assets.linkedIn
+    },
+    {
+      'url': "mailto:$gmailId@gmail.com",
+      'id': gmailId,
+      'icon': Assets.gmailIcon,
+    },
+    {
+      'url': "tel:$mobile",
+      'id': mobile,
+      'icon': Assets.phone,
+    },
+  ];
+
   static const String gitID = "jinosh05";
 
   static const String gitlink = "https://github.com/jinosh05";
