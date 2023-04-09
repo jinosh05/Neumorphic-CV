@@ -45,8 +45,8 @@ Currently supports flutter: 3.8.0
 
 I kept the code as original as possible with proper Commented Guides for anyone to understand and implement. Still you need to follow these steps.
   - First get Flutter and all necessary SDK/Plugins installed. Full guide here [Flutter: Get Started](https://flutter.dev/docs/get-started/install)
-  - Now download this [Repo](https://github.com/jinosh05/neumorphic_cv/archive/refs/heads/master.zip)
-  - Extract the Repo into your newly created **neumorphic_cv** and replace the required files.
+  - Now download this [Repo](https://github.com/jinosh05/Neumorphic-CV/archive/refs/heads/master.zip)
+  - Extract the Repo into your newly created **Neumorphic-CV** and replace the required files.
   - Now you can Finally run VS-Code or Android Studio whichever you prefer and get the flutter packages and just run the App.
   
 # Download the APK
