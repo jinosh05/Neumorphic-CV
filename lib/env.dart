@@ -173,7 +173,22 @@ Tamil Nadu, India
         },
       ]
     },
-    {'img': Assets.placeholder, 'name': "Watscooking", 'links': []},
+    {
+      'img': Assets.placeholder,
+      'name': "Watscooking",
+      'links': [],
+    },
+    {
+      'img': Assets.placeholder,
+      'name': "CBI Service (Food delivery)",
+      'links': [
+        {
+          'icon': Assets.playstore,
+          'url':
+              "https://play.google.com/store/apps/details?id=com.cbi_product.app",
+        },
+      ]
+    },
   ];
 
   static const List<String> technicalSkill = [
@@ -187,5 +202,7 @@ Tamil Nadu, India
     'Responsive Flutter Web'
   ];
 }
+
+
 
 // static const String a="";
