@@ -8,7 +8,7 @@ import 'configs/apptheme.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
+      [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
   await Future.delayed(const Duration(seconds: 1));
   runApp(const MyApp());
 }

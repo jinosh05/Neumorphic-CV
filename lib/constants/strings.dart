@@ -24,6 +24,8 @@ class S {
 
   static const String note = "Note";
 
+  static const String education = "Education";
+
   static const String noteMsg =
       "The Above mentioned apps are currently available at Online, for more information contact me directly";
 }

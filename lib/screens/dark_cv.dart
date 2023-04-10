@@ -152,6 +152,17 @@ class _DarkCVState extends State<DarkCV> {
                         Space.yf(0.75),
                         for (var i = 0; i < Env.experiences.length; i++)
                           _ExperienceCard(Env.experiences[i]),
+                        Space.yf(1.5),
+                        Text(
+                          S.education.toUpperCase(),
+                          style: AppText.b3b!.gilda().copyWith(
+                            color: Colors.green,
+                            shadows: [
+                              const Shadow(
+                                  blurRadius: 0.5, color: Colors.greenAccent)
+                            ],
+                          ),
+                        ),
                         Space.y1!,
                         Wrap(
                           spacing: AppDimensions.normalize(7),
