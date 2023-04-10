@@ -34,6 +34,8 @@ class Assets {
   static const String playstore = "${_iconBase}google-play-store.svg";
 
   static const String phone = "${_iconBase}phone.svg";
+
+  static const String placeholder = "${_iconBase}placeholder.png";
 }
 
 

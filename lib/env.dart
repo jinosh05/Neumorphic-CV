@@ -173,6 +173,7 @@ Tamil Nadu, India
         },
       ]
     },
+    {'img': Assets.placeholder, 'name': "Watscooking", 'links': []},
   ];
 
   static const List<String> technicalSkill = [
@@ -187,5 +188,4 @@ Tamil Nadu, India
   ];
 }
 
-
-  // static const String a="";
+// static const String a="";
