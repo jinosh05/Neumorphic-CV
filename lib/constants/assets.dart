@@ -36,6 +36,10 @@ class Assets {
   static const String phone = "${_iconBase}phone.svg";
 
   static const String placeholder = "${_iconBase}placeholder.png";
+
+  static const String apollo = "${_iconBase}apollo.jpg";
+
+  static const String au = "${_iconBase}au.png";
 }
 
 
