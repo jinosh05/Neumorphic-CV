@@ -62,7 +62,7 @@ class AppInfoWidget extends StatelessWidget {
               ),
               child: AppImage(
                 data['img'],
-                width: AppDimensions.space(2),
+                width: AppDimensions.normalize(12),
               ),
             ),
           ),

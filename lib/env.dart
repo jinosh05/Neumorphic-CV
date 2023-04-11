@@ -180,7 +180,7 @@ Tamil Nadu, India
     },
     {
       'img': Assets.placeholder,
-      'name': "CBI Service (Food delivery)",
+      'name': "CBI Service (Ecommerce)",
       'links': [
         {
           'icon': Assets.playstore,
