@@ -201,6 +201,21 @@ Tamil Nadu, India
     'Hive,Sqflite Storage',
     'Responsive Flutter Web'
   ];
+
+  static const List<Map> education = [
+    {
+      'course': "BCA",
+      'batch': "2018-2021",
+      'college': "Apollo Arts and Science College",
+      'img': Assets.apollo,
+    },
+    {
+      'course': "MCA (Distance Education)",
+      'batch': "2021-2023",
+      'college': "Annamalai University",
+      'img': Assets.au,
+    }
+  ];
 }
 
 
