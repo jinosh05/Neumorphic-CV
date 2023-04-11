@@ -23,27 +23,10 @@ class _ExperienceCard extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Neumorphic(
-            margin: Space.z!.t(1),
-            padding: Space.all(0.2),
-            style: NeumorphicStyle(
-              boxShape: const NeumorphicBoxShape.circle(),
-              shape: NeumorphicShape.flat,
-              depth: AppDimensions.normalize(5),
-              intensity: 0.9,
-              shadowDarkColor: Colors.black,
-              shadowLightColor: AppColors.black5,
-              color: AppColors.black4,
-              border: const NeumorphicBorder(color: AppColors.black5),
-              lightSource: LightSource.top,
-            ),
-            child: Container(
-              clipBehavior: Clip.antiAlias,
-              decoration: const BoxDecoration(shape: BoxShape.circle),
-              child: AppImage(
-                data['logo'],
-                width: AppDimensions.normalize(15),
-              ),
+          CircleBG(
+            child: AppImage(
+              data['logo'],
+              width: AppDimensions.normalize(15),
             ),
           ),
           Expanded(

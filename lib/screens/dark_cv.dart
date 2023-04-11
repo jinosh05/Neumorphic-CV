@@ -13,6 +13,7 @@ import 'package:neumorphic_cv/widgets/software_widget.dart';
 
 import '../configs/app_typography.dart';
 import '../widgets/app_info_widget.dart';
+import '../widgets/circle_bg.dart';
 import '../widgets/skill_widget.dart';
 import 'components/profile_info_header.dart';
 
@@ -152,7 +153,6 @@ class _DarkCVState extends State<DarkCV> {
                         Space.yf(0.75),
                         for (var i = 0; i < Env.experiences.length; i++)
                           _ExperienceCard(Env.experiences[i]),
-                        Space.yf(1.5),
                         Text(
                           S.education.toUpperCase(),
                           style: AppText.b3b!.gilda().copyWith(
@@ -160,6 +160,31 @@ class _DarkCVState extends State<DarkCV> {
                             shadows: [
                               const Shadow(
                                   blurRadius: 0.5, color: Colors.greenAccent)
+                            ],
+                          ),
+                        ),
+                        Space.y!,
+                        Neumorphic(
+                          margin: Space.z!.b(0.75),
+                          padding: Space.all(0.5, 0.35),
+                          style: NeumorphicStyle(
+                            depth: AppDimensions.normalize(1),
+                            color: AppColors.black4,
+                            border:
+                                const NeumorphicBorder(color: AppColors.black5),
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Text("BCA"),
+                                    Text("2018-2021"),
+                                    Text("Apollo Arts and Science College")
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
