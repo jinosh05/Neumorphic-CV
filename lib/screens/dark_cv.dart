@@ -81,16 +81,10 @@ class _DarkCVState extends State<DarkCV> {
                           ),
                         ),
                         Space.y1!,
-                        Text(
-                          S.skills.toUpperCase(),
-                          style: AppText.b3b!.gilda().copyWith(
-                            color: AppColors.lightBlue,
-                            shadows: [
-                              const Shadow(
-                                  blurRadius: 0.5, color: AppColors.darkBlue)
-                            ],
-                          ),
-                        ),
+                        const ShadowedText(
+                            text: S.skills,
+                            textColor: AppColors.lightBlue,
+                            shadowColor: AppColors.darkBlue),
                         Space.y1!,
                         for (var i = 0; i < Env.skills.length; i++)
                           SkillWidget(
@@ -222,6 +216,29 @@ class _DarkCVState extends State<DarkCV> {
             Space.yf(1.5),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class ShadowedText extends StatelessWidget {
+  const ShadowedText({
+    super.key,
+    required this.text,
+    required this.textColor,
+    required this.shadowColor,
+  });
+
+  final String text;
+  final Color textColor, shadowColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text.toUpperCase(),
+      style: AppText.b3b!.gilda().copyWith(
+        color: textColor,
+        shadows: [Shadow(blurRadius: 0.5, color: shadowColor)],
       ),
     );
   }
