@@ -26,15 +26,15 @@ class EducationCard extends StatelessWidget {
               children: [
                 Text(
                   data['course'],
-                  style: AppText.b1b,
+                  style: AppText.b2b,
                 ),
                 Text(
                   data['batch'],
-                  style: AppText.b2!.cl(Colors.white60),
+                  style: AppText.b3!.cl(Colors.white60),
                 ),
                 Text(
                   data['college'],
-                  style: AppText.b2!.w(6),
+                  style: AppText.b3!.w(6),
                 )
               ],
             ),

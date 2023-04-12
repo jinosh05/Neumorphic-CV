@@ -212,7 +212,7 @@ Tamil Nadu, India
     {
       'course': "MCA (Distance Education)",
       'batch': "2021-2023",
-      'college': "Annamalai University",
+      'college': "Annamalai University - DDE",
       'img': Assets.au,
     }
   ];
