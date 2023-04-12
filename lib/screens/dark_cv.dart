@@ -62,12 +62,9 @@ class _DarkCVState extends State<DarkCV> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Space.y!,
-                        NeumorphicText(
+                        Text(
                           S.aboutMe,
-                          textStyle: NeumorphicTextStyle(
-                              fontSize: AppDimensions.font(7),
-                              fontFamily: "Gilda",
-                              fontWeight: FontWeight.w400),
+                          style: AppText.b2b!.gilda(),
                         ),
                         Space.yf(0.75),
                         Card(
@@ -92,16 +89,10 @@ class _DarkCVState extends State<DarkCV> {
                             rating: Env.skills[i]['rating'],
                           ),
                         Space.y1!,
-                        Text(
-                          S.software.toUpperCase(),
-                          style: AppText.b3b!.gilda().copyWith(
-                            color: AppColors.red,
-                            shadows: [
-                              const Shadow(
-                                  blurRadius: 0.5, color: AppColors.yellow)
-                            ],
-                          ),
-                        ),
+                        const ShadowedText(
+                            text: S.software,
+                            textColor: AppColors.red,
+                            shadowColor: AppColors.yellow),
                         Space.y1!,
                         for (var i = 0; i < Env.softwares.length; i++)
                           SoftwareWidget(
@@ -111,17 +102,10 @@ class _DarkCVState extends State<DarkCV> {
                             url: Env.softwares[i]['url'],
                           ),
                         Space.y1!,
-                        Text(
-                          S.technicalSkills.toUpperCase(),
-                          style: AppText.b3b!.gilda().copyWith(
-                            color: Colors.pink,
-                            shadows: [
-                              const Shadow(
-                                blurRadius: 1,
-                                color: Colors.white,
-                              )
-                            ],
-                          ),
+                        const ShadowedText(
+                          text: S.technicalSkills,
+                          textColor: Colors.pink,
+                          shadowColor: Colors.white,
                         ),
                         Space.y!,
                         for (var i = 0; i < Env.technicalSkill.length; i++)
@@ -138,25 +122,17 @@ class _DarkCVState extends State<DarkCV> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Space.y!,
-                        NeumorphicText(
+                        Text(
                           S.experience,
-                          textStyle: NeumorphicTextStyle(
-                              fontSize: AppDimensions.font(7),
-                              fontFamily: "Gilda",
-                              fontWeight: FontWeight.w400),
+                          style: AppText.b2b!.gilda(),
                         ),
                         Space.yf(0.75),
                         for (var i = 0; i < Env.experiences.length; i++)
                           _ExperienceCard(Env.experiences[i]),
-                        Text(
-                          S.education.toUpperCase(),
-                          style: AppText.b3b!.gilda().copyWith(
-                            color: Colors.green,
-                            shadows: [
-                              const Shadow(
-                                  blurRadius: 0.5, color: Colors.greenAccent)
-                            ],
-                          ),
+                        const ShadowedText(
+                          text: S.education,
+                          textColor: Colors.green,
+                          shadowColor: Colors.greenAccent,
                         ),
                         Space.y1!,
                         for (var i = 0; i < Env.education.length; i++)
@@ -173,15 +149,10 @@ class _DarkCVState extends State<DarkCV> {
                           ],
                         ),
                         Space.yf(1.5),
-                        Text(
-                          S.appsDeveloped.toUpperCase(),
-                          style: AppText.b3b!.gilda().copyWith(
-                            color: Colors.orange,
-                            shadows: [
-                              const Shadow(
-                                  blurRadius: 0.5, color: AppColors.yellow)
-                            ],
-                          ),
+                        const ShadowedText(
+                          text: S.appsDeveloped,
+                          textColor: Colors.orange,
+                          shadowColor: AppColors.yellow,
                         ),
                         Space.y1!,
                         for (var i = 0; i < Env.appsInfo.length; i++)
@@ -189,14 +160,10 @@ class _DarkCVState extends State<DarkCV> {
                             data: Env.appsInfo[i],
                           ),
                         Space.y1!,
-                        Text(
-                          "${S.note.toUpperCase()} :- ",
-                          style: AppText.b3b!.gilda().copyWith(
-                            shadows: [
-                              const Shadow(
-                                  blurRadius: 1, color: AppColors.lightBlue)
-                            ],
-                          ),
+                        ShadowedText(
+                          text: "${S.note.toUpperCase()} :- ",
+                          textColor: Colors.white,
+                          shadowColor: AppColors.lightBlue,
                         ),
                         Space.y!,
                         NeumorphicText(
