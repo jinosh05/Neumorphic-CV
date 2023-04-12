@@ -9,6 +9,7 @@ import 'package:neumorphic_cv/constants/strings.dart';
 import 'package:neumorphic_cv/env.dart';
 import 'package:neumorphic_cv/widgets/animated_gradient.dart';
 import 'package:neumorphic_cv/widgets/app_image.dart';
+import 'package:neumorphic_cv/widgets/shadowed_text.dart';
 import 'package:neumorphic_cv/widgets/software_widget.dart';
 
 import '../configs/app_typography.dart';
@@ -183,29 +184,6 @@ class _DarkCVState extends State<DarkCV> {
             Space.yf(1.5),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class ShadowedText extends StatelessWidget {
-  const ShadowedText({
-    super.key,
-    required this.text,
-    required this.textColor,
-    required this.shadowColor,
-  });
-
-  final String text;
-  final Color textColor, shadowColor;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text.toUpperCase(),
-      style: AppText.b3b!.gilda().copyWith(
-        color: textColor,
-        shadows: [Shadow(blurRadius: 0.5, color: shadowColor)],
       ),
     );
   }
