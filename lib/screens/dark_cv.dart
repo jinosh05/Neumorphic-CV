@@ -167,14 +167,10 @@ class _DarkCVState extends State<DarkCV> {
                           shadowColor: AppColors.lightBlue,
                         ),
                         Space.y!,
-                        NeumorphicText(
+                        Text(
                           S.noteMsg,
-                          textAlign: TextAlign.left,
-                          textStyle: NeumorphicTextStyle(
-                            fontSize: AppDimensions.font(7),
-                            fontFamily: 'Roboto',
-                          ),
-                        )
+                          style: AppText.b2!,
+                        ),
                       ],
                     ),
                   ),
