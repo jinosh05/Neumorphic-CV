@@ -3,8 +3,16 @@
 
 Wanna try Neumorphism, fork this repo and try our latest Neumorphic CV.
 * Easily understandable and responsive code . 
-* Just edit the ![lib/env.dart](lib/env.dart) file and get your work done.
+* Just edit the lib/env.dart file and get your work done.
 
+
+
+## Packages Used
+
+- [Flutter_Svg Package](https://pub.dev/packages/flutter_svg)
+- [Url Launcher Package](https://github.com/jinosh05/url_launcher)
+- [Flutter_Neumorphic Package](https://github.com/jinosh05/Flutter-Neumorphic)
+ 
 
 ## Build Instructions
 
