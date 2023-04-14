@@ -36,6 +36,7 @@ and find the output in `build/app/outputs/flutter-apk/app-release.apk`
 
 
 
+
 # Dev hints
 
 Currently supports flutter: 3.8.0
