@@ -1,6 +1,5 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/screens/dark_cv.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 import 'configs/app.dart';
 import 'configs/apptheme.dart';
