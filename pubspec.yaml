@@ -15,6 +15,7 @@ dependencies:
   url_launcher: ^6.1.10
   flutter_neumorphic:
     git: https://github.com/jinosh05/Flutter-Neumorphic
+  responsive_builder: ^0.6.4
 
 dev_dependencies:
   flutter_test:
