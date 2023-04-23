@@ -86,6 +86,45 @@ class _DarkCVMobile extends StatelessWidget {
                 EducationCard(
                   data: Env.education[i],
                 ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                      child: Column(
+                    children: [
+                      const ShadowedText(
+                          text: S.skills,
+                          textColor: AppColors.lightBlue,
+                          shadowColor: AppColors.darkBlue),
+                      Space.y1!,
+                      for (var i = 0; i < Env.skills.length; i++)
+                        SkillWidget(
+                          name: Env.skills[i]['name'],
+                          rating: Env.skills[i]['rating'],
+                        ),
+                    ],
+                  )),
+                  Space.x!,
+                  Expanded(
+                      child: Column(
+                    children: [
+                      const ShadowedText(
+                          text: S.software,
+                          textColor: AppColors.red,
+                          shadowColor: AppColors.yellow),
+                      Space.y1!,
+                      for (var i = 0; i < Env.softwares.length; i++)
+                        SoftwareWidget(
+                          name: Env.softwares[i]['name'],
+                          image: Env.softwares[i]['image'],
+                          rating: Env.softwares[i]['rating'],
+                          url: Env.softwares[i]['url'],
+                        ),
+                      Space.y1!,
+                    ],
+                  )),
+                ],
+              ),
               Space.y1!,
               Wrap(
                 spacing: AppDimensions.normalize(7),
