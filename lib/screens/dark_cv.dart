@@ -12,7 +12,6 @@ import 'package:neumorphic_cv/widgets/animated_gradient.dart';
 import 'package:neumorphic_cv/widgets/app_image.dart';
 import 'package:neumorphic_cv/widgets/shadowed_text.dart';
 import 'package:neumorphic_cv/widgets/software_widget.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 import 'package:neumorphic_cv/configs/app_typography.dart';
 import 'package:neumorphic_cv/widgets/links_buttons.dart';
 
@@ -35,24 +34,25 @@ class DarkCV extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: UI.height,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [AppColors.black2, AppColors.black3],
-            tileMode: TileMode.decal,
-            begin: Alignment.topLeft,
-            end: Alignment.topRight,
+          height: UI.height,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [AppColors.black2, AppColors.black3],
+              tileMode: TileMode.decal,
+              begin: Alignment.topLeft,
+              end: Alignment.topRight,
+            ),
           ),
-        ),
-        child: ScreenTypeLayout.builder(
-          mobile: (context) {
-            return const _DarkCVMobile();
-          },
-          desktop: (context) {
-            return const _DarkCVDesktop();
-          },
-        ),
-      ),
+          child: UI.isPortrait ? const _DarkCVMobile() : _DarkCVDesktop()
+          //  ScreenTypeLayout.builder(
+          //   mobile: (context) {
+          //     return _DarkCVMobile();
+          //   },
+          //   desktop: (context) {
+          //     return const _DarkCVDesktop();
+          //   },
+          // ),
+          ),
     );
   }
 }
