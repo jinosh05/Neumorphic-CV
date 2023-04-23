@@ -38,21 +38,13 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.dark,
-      theme: AppTheme.theme.copyWith(),
-      debugShowCheckedModeBanner: false,
-      builder: (context, child) {
-        App.init(context);
-        return child ?? const SizedBox();
-      },
-      home: ScreenTypeLayout.builder(
-        mobile: (context) {
-          return const DarkCV();
+        themeMode: ThemeMode.dark,
+        theme: AppTheme.theme.copyWith(),
+        debugShowCheckedModeBanner: false,
+        builder: (context, child) {
+          App.init(context);
+          return child ?? const SizedBox();
         },
-        desktop: (context) {
-          return const DarkCV();
-        },
-      ),
-    );
+        home: const DarkCV());
   }
 }
