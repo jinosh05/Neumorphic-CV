@@ -125,6 +125,14 @@ class _DarkCVMobile extends StatelessWidget {
                   )),
                 ],
               ),
+              const ShadowedText(
+                text: S.technicalSkills,
+                textColor: Colors.pink,
+                shadowColor: Colors.white,
+              ),
+              Space.y!,
+              for (var i = 0; i < Env.technicalSkill.length; i++)
+                _TechnicalCard(Env.technicalSkill[i]),
               Space.y1!,
               Wrap(
                 spacing: AppDimensions.normalize(7),
