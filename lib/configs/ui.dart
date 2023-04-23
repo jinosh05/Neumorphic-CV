@@ -27,6 +27,8 @@ class UI {
   static bool? xlg;
   static bool? xxlg;
 
+  static bool isPortrait = false;
+
   static void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
     initChecks(_mediaQueryData!);
@@ -44,6 +46,9 @@ class UI {
         _mediaQueryData!.padding.top + _mediaQueryData!.padding.bottom;
     safeWidth = (width! - _safeAreaHorizontal!);
     safeHeight = (height! - _safeAreaVertical!);
+
+    ///
+    isPortrait = (width ?? 0) < 600;
   }
 
   static initChecks(MediaQueryData query) {
