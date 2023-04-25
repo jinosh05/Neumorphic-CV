@@ -1,14 +1,18 @@
+import 'dart:developer';
+
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/screens/dark_cv.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'configs/app.dart';
 import 'configs/apptheme.dart';
 
 void main() async {
+  setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
   // SystemChrome.setPreferredOrientations(
   //     [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
-  await Future.delayed(const Duration(seconds: 1));
+  await Future.delayed(const Duration(milliseconds: 250));
   runApp(const MyApp());
 }
 
@@ -37,13 +41,15 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        themeMode: ThemeMode.dark,
-        theme: AppTheme.theme.copyWith(),
-        debugShowCheckedModeBanner: false,
-        builder: (context, child) {
-          App.init(context);
-          return child ?? const SizedBox();
-        },
-        home: const DarkCV());
+      themeMode: ThemeMode.dark,
+      theme: AppTheme.theme.copyWith(),
+      debugShowCheckedModeBanner: false,
+      builder: (context, child) {
+        App.init(context);
+        log("Initialised");
+        return child ?? const SizedBox();
+      },
+      home: const DarkCV(),
+    );
   }
 }

@@ -12,6 +12,7 @@ dependencies:
 
   flutter_svg: ^2.0.5
   url_launcher: ^6.1.10
+  url_strategy: ^0.2.0
   flutter_neumorphic:
     git: https://github.com/jinosh05/Flutter-Neumorphic
 
