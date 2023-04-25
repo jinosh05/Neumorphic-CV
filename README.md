@@ -16,11 +16,17 @@ Wanna try Neumorphism, fork this repo and try our latest Neumorphic CV.
 
 ## Screenshots
 
-### Mobile 
+### Mobile<br/> 
 ![](screenshots/mobile_land.png)
 <br/>
 <br/>
-![](screenshots/mobile_portrait.png)
+![](screenshots/mobile_portrait.png)<br/>
+<br/>
+### Tablet<br/> 
+![](screenshots/tab_portrait.png)
+<br/>
+<br/>
+![](screenshots/tab_landscape.png)
 
 ## Build Instructions
 
