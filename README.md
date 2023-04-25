@@ -14,6 +14,14 @@ Wanna try Neumorphism, fork this repo and try our latest Neumorphic CV.
 - [Flutter_Neumorphic Package](https://github.com/jinosh05/Flutter-Neumorphic)
  
 
+## Screenshots
+
+### Mobile 
+![](screenshots/mobile_land.png)
+<br/>
+<br/>
+![](screenshots/mobile_portrait.png)
+
 ## Build Instructions
 
 ### Install Flutter
