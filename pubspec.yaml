@@ -20,7 +20,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.2.19
 
+flutter_native_splash:
+  color: "#111111"
 flutter:
   uses-material-design: true
 
