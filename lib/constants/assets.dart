@@ -3,7 +3,7 @@ class Assets {
 
   static const String _imgBase = "assets/images/";
 
-  static const String myPic = "${_imgBase}my_pic.jpg";
+  static const String myPic = "${_imgBase}my_pic.webp";
 
   static const String gitIcon = "${_iconBase}git.svg";
 

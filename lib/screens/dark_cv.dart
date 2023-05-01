@@ -38,7 +38,6 @@ class DarkCV extends StatelessWidget {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [AppColors.black2, AppColors.black3],
-              tileMode: TileMode.decal,
               begin: Alignment.topLeft,
               end: Alignment.topRight,
             ),

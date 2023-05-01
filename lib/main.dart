@@ -43,6 +43,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       themeMode: ThemeMode.dark,
       theme: AppTheme.theme.copyWith(),
+      locale: const Locale('en', 'IN'),
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         App.init(context);
