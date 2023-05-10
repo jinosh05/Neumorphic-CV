@@ -31,6 +31,8 @@ class Assets {
 
   static const String gdo = "${_iconBase}gdo.png";
 
+  static const String cg = "${_iconBase}cg.png";
+
   static const String playstore = "${_iconBase}google-play-store.svg";
 
   static const String phone = "${_iconBase}phone.svg";

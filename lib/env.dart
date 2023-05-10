@@ -139,6 +139,22 @@ Tamil Nadu, India
 
   static const List<Map> appsInfo = [
     {
+      'img': Assets.cg,
+      'name': "Cake Gallery",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url':
+              "https://apps.apple.com/us/app/cake-gallery-cakes-gifts-etc/id6446891633",
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              "https://play.google.com/store/apps/details?id=com.clt.cakegallery",
+        },
+      ]
+    },
+    {
       'img': Assets.gdo,
       'name': "GDO Gifts",
       'links': [
