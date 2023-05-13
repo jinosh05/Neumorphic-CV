@@ -28,6 +28,7 @@ class UI {
   static bool? xxlg;
 
   static bool isPortrait = false;
+  static Size? physicalSize;
 
   static void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
@@ -49,6 +50,7 @@ class UI {
 
     ///
     isPortrait = (width ?? 0) < 600;
+    physicalSize = View.of(context).physicalSize;
   }
 
   static initChecks(MediaQueryData query) {
