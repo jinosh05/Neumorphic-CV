@@ -34,7 +34,7 @@ class DarkCV extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          height: UI.height,
+          // height: UI.height,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [AppColors.black2, AppColors.black3],
