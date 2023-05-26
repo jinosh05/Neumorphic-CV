@@ -10,7 +10,7 @@ Wanna try Neumorphism, fork this repo and try our latest Neumorphic CV.
 ## Packages Used
 
 - [Flutter_Svg Package](https://pub.dev/packages/flutter_svg)
-- [Url Launcher Package](https://github.com/jinosh05/url_launcher)
+- [Url Launcher Package](https://pub.dev/packages/url_launcher)
 - [Flutter_Neumorphic Package](https://github.com/jinosh05/Flutter-Neumorphic)
  
 
