@@ -42,7 +42,7 @@ Tamil Nadu, India
   static const String gmailId = "jinosh05";
 
   static const String aboutMe =
-      "Hello, and thanks for visiting my profile.Am a Flutter developer with 2+ years of Experience in Flutter with strong knowledge in both Mobile App and Flutter Web Development. If you're looking for a highly skilled and rich experienced mobile expert with deep knowledge, a professional attitude, excellent communication skills and the high code quality, then I'm the person looking for.";
+      "Hello, and thanks for visiting my profile.\nExperienced Flutter Developer with 2.5 years of expertise in developing and publishing mobile applications on both the App Store and Play Store. Skilled in leveraging the Flutter framework and Dart programming language to create robust, cross-platform applications with a focus on user experience. Proficient in UI/UX design, API integration, and third-party library utilization. Adept at working collaboratively with cross-functional teams to deliver high-quality mobile solutions within strict timelines. Passionate about staying updated on industry trends and continuously enhancing skills to deliver innovative and successful apps to the market.";
 
   static const List<Map> skills = [
     {
