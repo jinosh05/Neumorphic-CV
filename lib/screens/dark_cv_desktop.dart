@@ -7,6 +7,7 @@ class _DarkCVDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       controller: controller,
+      shrinkWrap: true,
       children: [
         const _ProfileInfoHeader(),
         Divider(
