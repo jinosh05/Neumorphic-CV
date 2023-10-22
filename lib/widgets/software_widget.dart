@@ -49,9 +49,11 @@ class SoftwareWidget extends StatelessWidget {
                 ),
                 Space.x!,
                 name != null
-                    ? Text(
-                        name!,
-                        style: AppText.l1,
+                    ? Expanded(
+                        child: Text(
+                          name!,
+                          style: AppText.l1,
+                        ),
                       )
                     : const SizedBox(),
               ],
@@ -78,7 +80,7 @@ class _Softwarendicatior extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: Space.hf(0.1),
-      padding: Space.all(enabled ? 0.2 : 0.4),
+      padding: Space.all(enabled ? 0.15 : 0.3),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         gradient: RadialGradient(
@@ -87,7 +89,7 @@ class _Softwarendicatior extends StatelessWidget {
       ),
       child: enabled
           ? Container(
-              padding: Space.all(0.20),
+              padding: Space.all(0.15),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 boxShadow: [

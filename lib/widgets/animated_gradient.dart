@@ -5,7 +5,7 @@ import '../configs/app_dimensions.dart';
 
 class AnimateGradient extends StatefulWidget {
   const AnimateGradient({
-    Key? key,
+    super.key,
     required this.primaryColors,
     required this.secondaryColors,
     this.child,
@@ -18,8 +18,7 @@ class AnimateGradient extends StatefulWidget {
     this.animateAlignments = true,
     this.reverse = true,
   })  : assert(primaryColors.length >= 2),
-        assert(primaryColors.length == secondaryColors.length),
-        super(key: key);
+        assert(primaryColors.length == secondaryColors.length);
 
   /// [controller]: pass this to have a fine control over the [Animation]
   final AnimationController? controller;
