@@ -42,7 +42,7 @@ Tamil Nadu, India
   static const String gmailId = "jinosh05";
 
   static const String aboutMe =
-      "Hello, and thanks for visiting my profile.\nExperienced Flutter Developer with 2.5 years of expertise in developing and publishing mobile applications on both the App Store and Play Store. Skilled in leveraging the Flutter framework and Dart programming language to create robust, cross-platform applications with a focus on user experience. Proficient in UI/UX design, API integration, and third-party library utilization. Adept at working collaboratively with cross-functional teams to deliver high-quality mobile solutions within strict timelines. Passionate about staying updated on industry trends and continuously enhancing skills to deliver innovative and successful apps to the market.";
+      "Hello, and thanks for visiting my profile.\nI'm a Senior Flutter Developer with 3.5 years of experience in crafting high-quality mobile and web applications. I have a proven track record of developing and publishing apps on both the Google Play Store and Apple App Store. My expertise spans across Android, iOS, and web platforms, where I leverage the Flutter framework and Dart language to deliver seamless, responsive, and user-friendly applications. With a strong foundation in UI/UX design, API integration, and state management, I am committed to building innovative solutions and continuously enhancing my skills to stay ahead in the fast-evolving tech landscape.";
 
   static const List<Map> skills = [
     {
@@ -119,7 +119,7 @@ Tamil Nadu, India
       "company": "Connective Links Technology",
       'logo': Assets.clt,
       'position': "Flutter Developer",
-      'duration': "07/2022 - Current",
+      'duration': "07/2022 - 05/2023",
       'experience': """
 * Developed 2 E-commerce based Apps
 * Published Apps in AppStore, PlayStore
@@ -128,6 +128,19 @@ Tamil Nadu, India
 """,
       'site': 'https://connectivelinkstechnology.com/',
       'btnTitle': 'CLT'
+    },
+    {
+      "company": "MindOrigin Technologies",
+      'logo': Assets.mot,
+      'position': "Senior Flutter Developer",
+      'duration': "07/2023 - 07/2024",
+      'experience': """
+* Customised Chart Packages
+* Worked on WebSocket and MQTT
+* Worked on Complete POC of Trading app in Flutter Android, iOS and Web
+""",
+      'site': 'https://mindorigin.in/',
+      'btnTitle': 'MOT'
     },
   ];
 
@@ -204,6 +217,11 @@ Tamil Nadu, India
               "https://play.google.com/store/apps/details?id=com.cbi_product.app",
         },
       ]
+    },
+    {
+      'img': Assets.placeholder,
+      'name': "Firstock",
+      'links': [],
     },
   ];
 
