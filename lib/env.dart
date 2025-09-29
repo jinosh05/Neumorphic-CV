@@ -52,7 +52,7 @@ Career Highlights:
 """;
 
   static const List<Map> skills = [
-    {"name": S.communication, 'rating': 4},
+    {"name": S.communication, 'rating': 5},
     {"name": S.creativity, 'rating': 3},
     {"name": S.proactivity, 'rating': 5},
     {"name": S.problemSolving, 'rating': 4},
@@ -140,16 +140,28 @@ Career Highlights:
     {
       'company': 'Develup',
       'logo': Assets.develup,
-      'position': 'Flutter Developer',
+      'position': 'Flutter Developer - Freelancing',
       'duration': '02/2025 - 08/2025',
       'experience': """
 * Built and shipped a production Flutter app for Android and iOS
 * Implemented AI-powered job search features and in-app flows
 * Owned end-to-end Flutter development, from UI/UX to API integration
 """,
-      'site':
-          'https://develup.com/', // replace with the correct site if different
+      'site': 'https://develup.com/',
       'btnTitle': 'Develup',
+    },
+    {
+      'company': 'Fellow Founder',
+      'logo': Assets.fellowFounder,
+      'position': 'Flutter and FastAPI Developer',
+      'duration': '07/2024 - Present',
+      'experience': """
+* Building and maintaining a cross-platform Flutter app with production releases on Android and iOS
+* Developing FastAPI backend services: REST endpoints, auth, and data models
+* Driving end-to-end features: UI/UX, state management, API integration, and app publishing
+""",
+      'site': 'https://www.fellowfounder.in/',
+      'btnTitle': 'Fellow Founder',
     },
   ];
 
@@ -265,6 +277,21 @@ Career Highlights:
           'icon': Assets.playstore,
           'url':
               'https://play.google.com/store/apps/details?id=com.develup.app',
+        },
+      ],
+    },
+    {
+      'img': Assets.fellowFounder,
+      'name': "Fellow Founder",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url': 'https://apps.apple.com/in/app/fellow-founder/id6480413758',
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              'https://play.google.com/store/apps/details?id=com.fellow_founder.app',
         },
       ],
     },

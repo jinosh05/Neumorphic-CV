@@ -49,6 +49,8 @@ class Assets {
 
   static const String placeholder = "${_iconBase}placeholder.png";
 
+  static const String fellowFounder = "${_iconBase}fellow_founder.png";
+
   static const String apollo = "${_iconBase}apollo.jpg";
 
   static const String au = "${_iconBase}au.png";
