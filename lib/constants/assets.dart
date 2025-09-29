@@ -3,7 +3,7 @@ class Assets {
 
   static const String _imgBase = "assets/images/";
 
-  static const String myPic = "${_imgBase}my_pic.webp";
+  static const String myPic = "${_imgBase}profile.jpeg";
 
   static const String gitIcon = "${_iconBase}git.svg";
 
@@ -27,6 +27,12 @@ class Assets {
 
   static const String appstore = "${_iconBase}app-store.svg";
 
+  static const String windows = "${_iconBase}microsoft.png";
+
+  static const String macos = "${_iconBase}macos.png";
+
+  static const String linux = "${_iconBase}linux.png";
+
   static const String b2b = "${_iconBase}b2b.png";
 
   static const String doclense = "${_iconBase}doclense.png";
@@ -46,6 +52,8 @@ class Assets {
   static const String apollo = "${_iconBase}apollo.jpg";
 
   static const String au = "${_iconBase}au.png";
+
+  static const String develup = "${_iconBase}develup.jpeg";
 }
 
 

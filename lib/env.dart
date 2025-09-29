@@ -9,7 +9,6 @@ class Env {
   static const String profession = "Flutter Developer";
 
   static const String address = """
-No 14/28 , Nehru Nagar 10th Street,
 Tondiarpet, Chennai-81,
 Tamil Nadu, India
 """;
@@ -18,23 +17,19 @@ Tamil Nadu, India
     {
       'url': "https://github.com/jinosh05",
       'id': "jinosh05",
-      'icon': Assets.gitIcon
+      'icon': Assets.gitIcon,
     },
     {
       'url': "https://www.linkedin.com/in/jinosh/",
       'id': "Jinosh D",
-      'icon': Assets.linkedIn
+      'icon': Assets.linkedIn,
     },
     {
       'url': "mailto:$gmailId@gmail.com",
       'id': gmailId,
       'icon': Assets.gmailIcon,
     },
-    {
-      'url': "tel:$mobile",
-      'id': mobile,
-      'icon': Assets.phone,
-    },
+    {'url': "tel:$mobile", 'id': mobile, 'icon': Assets.phone},
   ];
 
   static const String mobile = "+918870358783";
@@ -42,38 +37,25 @@ Tamil Nadu, India
   static const String gmailId = "jinosh05";
 
   static const String aboutMe = """
-With 4+ years of experience, I specialize in crafting high-quality apps that blend stunning design with robust functionality. Whether for iOS, Android, or the web, I turn ideas into polished, store-ready products.
+Crafting high-quality apps that blend stunning design with robust functionality, with 4.9 years of experience delivering cross‑platform products for iOS, Android, and web. From concept to store‑ready release, projects are taken from idea to polished launch.
 
 Core Skills Include:
-* Flutter & Dart | Mobile & Web Development
-* UI/UX Design | State Management (Bloc, Provider, Cubit)
-* API Integration (RESTful APIs, Firebase)
-* Version Control | App Publishing | Agile
+* Flutter & Dart | Mobile & Web Development 
+* UI/UX Design | State Management (Bloc, Provider, Cubit) 
+* API Integration (RESTful APIs, Firebase) | Beginner: Python FastAPI 
+* Version Control | App Publishing | Agile 
 
-🚀 Career Highlights:
-* Led multi-platform projects, delivering ahead of deadlines.
-* Published apps on Google Play Store & Apple App Store.
-* Seamlessly integrated APIs for enhanced user experiences.
+Career Highlights:
+* Led multi-platform projects and delivered ahead of deadlines, balancing performance, UX, and maintainability.
+* Published apps on Google Play Store and Apple App Store with smooth review cycles and release management.
+* Integrated RESTful APIs, Firebase services, and recently began building backend endpoints with FastAPI to enhance user experiences.
 """;
-  // "Hello, and thanks for visiting my profile.\nI'm a Senior Flutter Developer with 3.5 years of experience in crafting high-quality mobile and web applications. I have a proven track record of developing and publishing apps on both the Google Play Store and Apple App Store. My expertise spans across Android, iOS, and web platforms, where I leverage the Flutter framework and Dart language to deliver seamless, responsive, and user-friendly applications. With a strong foundation in UI/UX design, API integration, and state management, I am committed to building innovative solutions and continuously enhancing my skills to stay ahead in the fast-evolving tech landscape.";
 
   static const List<Map> skills = [
-    {
-      "name": S.communication,
-      'rating': 4,
-    },
-    {
-      "name": S.creativity,
-      'rating': 3,
-    },
-    {
-      "name": S.proactivity,
-      'rating': 5,
-    },
-    {
-      "name": S.problemSolving,
-      'rating': 4,
-    },
+    {"name": S.communication, 'rating': 4},
+    {"name": S.creativity, 'rating': 3},
+    {"name": S.proactivity, 'rating': 5},
+    {"name": S.problemSolving, 'rating': 4},
   ];
 
   static const List<Map> softwares = [
@@ -81,25 +63,25 @@ Core Skills Include:
       "name": "Flutter",
       "image": Assets.flutter,
       'rating': 5,
-      'url': "https://flutter.dev/"
+      'url': "https://flutter.dev/",
     },
     {
       "name": "Firebase",
       "image": Assets.firebase,
       'rating': 4,
-      'url': "https://firebase.google.com/"
+      'url': "https://firebase.google.com/",
     },
     {
       "name": "Python",
       "image": Assets.python,
       'rating': 3,
-      'url': "https://www.python.org/"
+      'url': "https://www.python.org/",
     },
     {
       "name": "JS",
       "image": Assets.javascript,
       'rating': 3,
-      'url': "https://www.javascript.com/"
+      'url': "https://www.javascript.com/",
     },
   ];
 
@@ -114,7 +96,7 @@ Core Skills Include:
 * Learn't and Developed Firebase, Map, etc..
 """,
       'site': 'https://excrin.com/',
-      'btnTitle': 'excrin.com'
+      'btnTitle': 'excrin.com',
     },
     {
       "company": "Excrin ThinkLabs",
@@ -126,7 +108,7 @@ Core Skills Include:
 * Published Apps in Playstore
 """,
       'site': 'https://excrin.com/',
-      'btnTitle': 'excrin.com'
+      'btnTitle': 'excrin.com',
     },
     {
       "company": "Connective Links Technology",
@@ -140,7 +122,7 @@ Core Skills Include:
 * A Delivery Boy App
 """,
       'site': 'https://connectivelinkstechnology.com/',
-      'btnTitle': 'CLT'
+      'btnTitle': 'CLT',
     },
     {
       "company": "MindOrigin Technologies",
@@ -153,7 +135,21 @@ Core Skills Include:
 * Worked on Complete POC of Trading app in Flutter Android, iOS and Web
 """,
       'site': 'https://mindorigin.in/',
-      'btnTitle': 'MOT'
+      'btnTitle': 'MOT',
+    },
+    {
+      'company': 'Develup',
+      'logo': Assets.develup,
+      'position': 'Flutter Developer',
+      'duration': '02/2025 - 08/2025',
+      'experience': """
+* Built and shipped a production Flutter app for Android and iOS
+* Implemented AI-powered job search features and in-app flows
+* Owned end-to-end Flutter development, from UI/UX to API integration
+""",
+      'site':
+          'https://develup.com/', // replace with the correct site if different
+      'btnTitle': 'Develup',
     },
   ];
 
@@ -161,6 +157,7 @@ Core Skills Include:
     "Tamil",
     "English",
     "Hindi",
+    "Kannada",
   ];
 
   static const List<Map> appsInfo = [
@@ -178,7 +175,7 @@ Core Skills Include:
           'url':
               "https://play.google.com/store/apps/details?id=com.clt.cakegallery",
         },
-      ]
+      ],
     },
     {
       'img': Assets.gdo,
@@ -193,7 +190,7 @@ Core Skills Include:
           'url':
               "https://play.google.com/store/apps/details?id=com.clt.gdogifts",
         },
-      ]
+      ],
     },
     {
       'img': Assets.b2b,
@@ -203,23 +200,16 @@ Core Skills Include:
           'icon': Assets.playstore,
           'url': "https://play.google.com/store/apps/details?id=com.fluttr.b2b",
         },
-      ]
+      ],
     },
     {
       'img': Assets.doclense,
       'name': "Doclense",
       'links': [
-        {
-          'icon': Assets.gitIcon,
-          'url': "https://github.com/jinosh05/DocLense",
-        },
-      ]
+        {'icon': Assets.gitIcon, 'url': "https://github.com/jinosh05/DocLense"},
+      ],
     },
-    {
-      'img': Assets.placeholder,
-      'name': "Watscooking",
-      'links': [],
-    },
+    {'img': Assets.placeholder, 'name': "Watscooking", 'links': []},
     {
       'img': Assets.placeholder,
       'name': "CBI Service (Ecommerce)",
@@ -229,13 +219,9 @@ Core Skills Include:
           'url':
               "https://play.google.com/store/apps/details?id=com.cbi_product.app",
         },
-      ]
+      ],
     },
-    {
-      'img': Assets.placeholder,
-      'name': "Firstock",
-      'links': [],
-    },
+    {'img': Assets.placeholder, 'name': "Firstock", 'links': []},
     {
       'img': Assets.quran,
       'name': "Al Quran Multilingual",
@@ -249,7 +235,38 @@ Core Skills Include:
           'icon': Assets.playstore,
           'url': "https://play.google.com/store/apps/details?id=jino.quran.app",
         },
-      ]
+        {
+          'icon': Assets.windows,
+          'url':
+              "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.27/Al-Quran-Multilingual-Setup.exe",
+        },
+        {
+          'icon': Assets.linux,
+          'url':
+              "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.27/Al-Quran-Multilingual-x86_64.AppImage",
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              "https://apps.apple.com/in/app/al-quran-multilingual/id6738510896",
+        },
+      ],
+    },
+    {
+      'img': Assets.develup,
+      'name': "DevelUp: Jobs & Upskilling",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url':
+              'https://apps.apple.com/us/app/develup-jobs-upskilling/id6742466123?uo=2',
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              'https://play.google.com/store/apps/details?id=com.develup.app',
+        },
+      ],
     },
   ];
 
@@ -261,7 +278,8 @@ Core Skills Include:
     'Agile and Robust Development',
     'Firebase,Map Integration',
     'Hive,Sqflite Storage',
-    'Responsive Flutter Web'
+    'Responsive Flutter Web',
+    "Python FastAPI Development",
   ];
 
   static const List<Map> education = [
@@ -276,7 +294,7 @@ Core Skills Include:
       'batch': "2021-2023",
       'college': "Annamalai University - DDE",
       'img': Assets.au,
-    }
+    },
   ];
 }
 
