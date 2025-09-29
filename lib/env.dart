@@ -264,7 +264,7 @@ Career Highlights:
               "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.27/Al-Quran-Multilingual-x86_64.AppImage",
         },
         {
-          'icon': Assets.playstore,
+          'icon': Assets.appstore,
           'url':
               "https://apps.apple.com/in/app/al-quran-multilingual/id6738510896",
         },
