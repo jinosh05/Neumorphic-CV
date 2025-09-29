@@ -236,7 +236,7 @@ Career Highlights:
     {'img': Assets.placeholder, 'name': "Firstock", 'links': []},
     {
       'img': Assets.quran,
-      'name': "Al Quran Multilingual",
+      'name': "Al Quran Multilingual Pro",
       'links': [
         {
           'icon': Assets.appstore,
@@ -247,6 +247,12 @@ Career Highlights:
           'icon': Assets.playstore,
           'url': "https://play.google.com/store/apps/details?id=jino.quran.app",
         },
+      ],
+    },
+    {
+      'img': Assets.quran,
+      'name': "Al Quran Multilingual",
+      'links': [
         {
           'icon': Assets.windows,
           'url':
