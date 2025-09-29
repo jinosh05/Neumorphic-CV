@@ -4,15 +4,14 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.1.0 <4.0.0"
-  flutter: ">3.10.0"
+  sdk: ">=3.9.2 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  flutter_svg: ^2.0.10+1
-  url_launcher: ^6.3.0
+  flutter_svg: ^2.2.1
+  url_launcher: ^6.3.2
   url_strategy: ^0.3.0
   flutter_neumorphic:
     git: https://github.com/jinosh05/Flutter-Neumorphic
@@ -20,8 +19,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
-  flutter_native_splash: ^2.4.1
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.6
 
 flutter_native_splash:
   color: "#111111"
