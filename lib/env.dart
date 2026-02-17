@@ -37,18 +37,30 @@ Tamil Nadu, India
   static const String gmailId = "jinosh05";
 
   static const String aboutMe = """
-Crafting high-quality apps that blend stunning design with robust functionality, with 4.9 years of experience delivering cross‑platform products for iOS, Android, and web. From concept to store‑ready release, projects are taken from idea to polished launch.
+With around 5 years of experience, I am a results-driven Full-Stack Developer specializing in building high-performance, cross-platform applications from concept to deployment. I excel at creating scalable solutions that run seamlessly on iOS, Android, Windows, macOS, and Linux.
+
 
 Core Skills Include:
-* Flutter & Dart | Mobile & Web Development 
-* UI/UX Design | State Management (Bloc, Provider, Cubit) 
-* API Integration (RESTful APIs, Firebase) | Beginner: Python FastAPI 
-* Version Control | App Publishing | Agile 
+Flutter & Dart: Expert in cross-platform development for mobile, web, and desktop.
 
-Career Highlights:
-* Led multi-platform projects and delivered ahead of deadlines, balancing performance, UX, and maintainability.
-* Published apps on Google Play Store and Apple App Store with smooth review cycles and release management.
-* Integrated RESTful APIs, Firebase services, and recently began building backend endpoints with FastAPI to enhance user experiences.
+FastAPI (Python): Proficient in building robust backend APIs and complete Admin Dashboards.
+
+UI/UX Design: Crafting intuitive, pixel-perfect, and responsive user interfaces.
+
+State Management: Bloc, Provider, Cubit.
+
+Multilingual Applications: Proven experience developing apps supporting a global user base.
+
+End-to-End Publishing: Successfully deploying apps on the Apple App Store, Google Play Store, and desktop marketplaces.
+
+
+
+🚀 Career Highlights:
+Lead Developer of Al Quran Multilingual: Architected, built, and deployed a comprehensive, multilingual Quran application across five platforms (iOS, Android, Windows, macOS, and Linux).
+
+Full-Stack FastAPI Implementation: Engineered a complete backend system from scratch, including RESTful APIs and a feature-rich administrative dashboard.
+
+Proven Product Delivery: A consistent track record of transforming complex ideas into polished, store-ready products used by a diverse audience.
 """;
 
   static const List<Map> skills = [
@@ -170,6 +182,9 @@ Career Highlights:
     "English",
     "Hindi",
     "Kannada",
+    "Malayalam",
+    "Telugu",
+    "Urdu",
   ];
 
   static const List<Map> appsInfo = [
@@ -301,6 +316,22 @@ Career Highlights:
         },
       ],
     },
+    {
+      'img': Assets.skolara,
+      'name': "Skolara",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url':
+              'https://apps.apple.com/in/app/skolara-where-dream-matters/id6753106951',
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              'https://play.google.com/store/apps/details?id=com.skolara.app',
+        },
+      ],
+    },
   ];
 
   static const List<String> technicalSkill = [
@@ -330,5 +361,3 @@ Career Highlights:
     },
   ];
 }
-
-// static const String a=

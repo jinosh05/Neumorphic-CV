@@ -56,6 +56,8 @@ class Assets {
   static const String au = "${_iconBase}au.png";
 
   static const String develup = "${_iconBase}develup.jpeg";
+
+  static const String skolara = "${_iconBase}skolara.png";
 }
 
 
