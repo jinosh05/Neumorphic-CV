@@ -237,15 +237,8 @@ Proven Product Delivery: A consistent track record of transforming complex ideas
       ],
     },
     {'img': Assets.placeholder, 'name': "Watscooking", 'links': []},
-    {
-      'img': Assets.placeholder,
-      'name': "CBI Service (Ecommerce)",
-      'links': [
-        {
-          'icon': Assets.playstore,
-          'url':
-              "https://play.google.com/store/apps/details?id=com.cbi_product.app",
-        },
+    {'img': Assets.placeholder, 'name': "CBI Service (Ecommerce)", 'links': [
+     
       ],
     },
     {'img': Assets.placeholder, 'name': "Firstock", 'links': []},
@@ -285,20 +278,8 @@ Proven Product Delivery: A consistent track record of transforming complex ideas
         },
       ],
     },
-    {
-      'img': Assets.develup,
-      'name': "DevelUp: Jobs & Upskilling",
-      'links': [
-        {
-          'icon': Assets.appstore,
-          'url':
-              'https://apps.apple.com/us/app/develup-jobs-upskilling/id6742466123?uo=2',
-        },
-        {
-          'icon': Assets.playstore,
-          'url':
-              'https://play.google.com/store/apps/details?id=com.develup.app',
-        },
+    {'img': Assets.develup, 'name': "DevelUp: Jobs & Upskilling", 'links': [
+   
       ],
     },
     {
