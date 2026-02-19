@@ -13,34 +13,30 @@ class _ProfileInfoHeader extends StatelessWidget {
           const ProfilePic(),
           Space.x1!,
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Space.y!,
-                Text(
-                  Env.name,
-                  style: AppText.b2b!.gilda(),
-                ),
-                Space.yf(0.25),
-                Text(
-                  Env.profession.toUpperCase(),
-                  style: AppText.b3b!.gilda().copyWith(
-                    color: AppColors.lightBlue,
-                    shadows: [const Shadow(color: AppColors.darkBlue)],
+            child: SelectionArea(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Space.y!,
+                  Text(Env.name, style: AppText.b2b!.gilda()),
+                  Space.yf(0.25),
+                  Text(
+                    Env.profession.toUpperCase(),
+                    style: AppText.b3b!.gilda().copyWith(
+                      color: AppColors.lightBlue,
+                      shadows: [const Shadow(color: AppColors.darkBlue)],
+                    ),
                   ),
-                ),
-                Space.yf(0.25),
-                SizedBox(
-                  width: AppDimensions.width(60),
-                  child: Text(
-                    Env.address,
-                    style: AppText.l1b,
+                  Space.yf(0.25),
+                  SizedBox(
+                    width: AppDimensions.width(60),
+                    child: Text(Env.address, style: AppText.l1b),
                   ),
-                ),
-                UI.isPortrait ? const SizedBox() : const _LinksWrap()
-              ],
+                  UI.isPortrait ? const SizedBox() : const _LinksWrap(),
+                ],
+              ),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -57,9 +53,7 @@ class _LinksWrap extends StatelessWidget {
       runSpacing: AppDimensions.space(),
       children: [
         for (var i = 0; i < Env.btnlinks.length; i++)
-          LinksButtons(
-            data: Env.btnlinks[i],
-          )
+          LinksButtons(data: Env.btnlinks[i]),
       ],
     );
   }

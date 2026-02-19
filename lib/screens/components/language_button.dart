@@ -6,26 +6,24 @@ class _LanguageButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Neumorphic(
-      margin: Space.z!,
-      style: NeumorphicStyle(
-        color: AppColors.black6,
-        boxShape: const NeumorphicBoxShape.circle(),
-        border: NeumorphicBorder(
-          color: AppColors.lightBlue,
-          width: AppDimensions.normalize(2),
+    return Semantics(
+      label: 'Language: $language',
+      child: Neumorphic(
+        margin: Space.z!,
+        style: NeumorphicStyle(
+          color: AppColors.black6,
+          boxShape: const NeumorphicBoxShape.circle(),
+          border: NeumorphicBorder(
+            color: AppColors.lightBlue,
+            width: AppDimensions.normalize(2),
+          ),
         ),
-      ),
-      child: Container(
-        width: AppDimensions.normalize(28),
-        height: AppDimensions.normalize(28),
-        alignment: Alignment.center,
-        decoration: const BoxDecoration(
-          shape: BoxShape.circle,
-        ),
-        child: Text(
-          language,
-          style: AppText.b3b,
+        child: Container(
+          width: AppDimensions.normalize(28),
+          height: AppDimensions.normalize(28),
+          alignment: Alignment.center,
+          decoration: const BoxDecoration(shape: BoxShape.circle),
+          child: Text(language, style: AppText.b3b),
         ),
       ),
     );

@@ -15,10 +15,7 @@ class _DarkCVMobileState extends State<_DarkCVMobile> {
       controller: controller,
       children: [
         const _ProfileInfoHeader(),
-        Padding(
-          padding: Space.hf(1.5).b(1),
-          child: const _LinksWrap(),
-        ),
+        Padding(padding: Space.hf(1.5).b(1), child: const _LinksWrap()),
         Divider(
           height: AppDimensions.height(0.1),
           thickness: 0.5,
@@ -30,29 +27,22 @@ class _DarkCVMobileState extends State<_DarkCVMobile> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Space.y!,
-              Text(
-                S.aboutMe,
-                style: AppText.b2b!.gilda(),
-              ),
+              Text(S.aboutMe, style: AppText.b2b!.gilda()),
               Space.yf(0.75),
-              Card(
-                elevation: 5,
-                surfaceTintColor: Colors.white.withOpacity(0.1),
-                color: Colors.white.withOpacity(0.05),
-                margin: Space.z,
-                child: Padding(
-                  padding: Space.all(1),
-                  child: Text(
-                    Env.aboutMe,
-                    style: AppText.b3,
+              SelectionArea(
+                child: Card(
+                  elevation: 5,
+                  surfaceTintColor: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withOpacity(0.05),
+                  margin: Space.z,
+                  child: Padding(
+                    padding: Space.all(1),
+                    child: Text(Env.aboutMe, style: AppText.b3),
                   ),
                 ),
               ),
               Space.y!,
-              Text(
-                S.experience,
-                style: AppText.b2b!.gilda(),
-              ),
+              Text(S.experience, style: AppText.b2b!.gilda()),
               Space.yf(0.75),
               for (var i = 0; i < Env.experiences.length; i++)
                 _ExperienceCard(Env.experiences[i]),
@@ -63,46 +53,48 @@ class _DarkCVMobileState extends State<_DarkCVMobile> {
               ),
               Space.y1!,
               for (var i = 0; i < Env.education.length; i++)
-                EducationCard(
-                  data: Env.education[i],
-                ),
+                EducationCard(data: Env.education[i]),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                      child: Column(
-                    children: [
-                      const ShadowedText(
+                    child: Column(
+                      children: [
+                        const ShadowedText(
                           text: S.skills,
                           textColor: AppColors.lightBlue,
-                          shadowColor: AppColors.darkBlue),
-                      Space.y1!,
-                      for (var i = 0; i < Env.skills.length; i++)
-                        SkillWidget(
-                          name: Env.skills[i]['name'],
-                          rating: Env.skills[i]['rating'],
+                          shadowColor: AppColors.darkBlue,
                         ),
-                    ],
-                  )),
+                        Space.y1!,
+                        for (var i = 0; i < Env.skills.length; i++)
+                          SkillWidget(
+                            name: Env.skills[i]['name'],
+                            rating: Env.skills[i]['rating'],
+                          ),
+                      ],
+                    ),
+                  ),
                   Space.x!,
                   Expanded(
-                      child: Column(
-                    children: [
-                      const ShadowedText(
+                    child: Column(
+                      children: [
+                        const ShadowedText(
                           text: S.software,
                           textColor: AppColors.red,
-                          shadowColor: AppColors.yellow),
-                      Space.y1!,
-                      for (var i = 0; i < Env.softwares.length; i++)
-                        SoftwareWidget(
-                          name: Env.softwares[i]['name'],
-                          image: Env.softwares[i]['image'],
-                          rating: Env.softwares[i]['rating'],
-                          url: Env.softwares[i]['url'],
+                          shadowColor: AppColors.yellow,
                         ),
-                      Space.y1!,
-                    ],
-                  )),
+                        Space.y1!,
+                        for (var i = 0; i < Env.softwares.length; i++)
+                          SoftwareWidget(
+                            name: Env.softwares[i]['name'],
+                            image: Env.softwares[i]['image'],
+                            rating: Env.softwares[i]['rating'],
+                            url: Env.softwares[i]['url'],
+                          ),
+                        Space.y1!,
+                      ],
+                    ),
+                  ),
                 ],
               ),
               const ShadowedText(
@@ -130,9 +122,7 @@ class _DarkCVMobileState extends State<_DarkCVMobile> {
               ),
               Space.y1!,
               for (var i = 0; i < Env.appsInfo.length; i++)
-                AppInfoWidget(
-                  data: Env.appsInfo[i],
-                ),
+                AppInfoWidget(data: Env.appsInfo[i]),
               Space.y1!,
               ShadowedText(
                 text: "${S.note.toUpperCase()} :- ",
@@ -140,14 +130,13 @@ class _DarkCVMobileState extends State<_DarkCVMobile> {
                 shadowColor: AppColors.lightBlue,
               ),
               Space.y!,
-              Text(
-                S.noteMsg,
-                style: AppText.b2!.tsc(0.7),
+              SelectionArea(
+                child: Text(S.noteMsg, style: AppText.b2!.tsc(0.7)),
               ),
               Space.y1!,
             ],
           ),
-        )
+        ),
       ],
     );
   }

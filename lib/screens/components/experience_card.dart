@@ -12,7 +12,8 @@ class _ExperienceCard extends StatelessWidget {
       style: NeumorphicStyle(
         shape: NeumorphicShape.concave,
         boxShape: NeumorphicBoxShape.roundRect(
-            BorderRadius.circular(AppDimensions.normalize(7))),
+          BorderRadius.circular(AppDimensions.normalize(7)),
+        ),
         shadowLightColor: Colors.black,
         shadowDarkColor: AppColors.black2,
         depth: AppDimensions.normalize(1),
@@ -24,56 +25,67 @@ class _ExperienceCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CircleBG(
-            child: AppImage(
-              data['logo'],
-              width: AppDimensions.normalize(15),
-            ),
+            child: AppImage(data['logo'], width: AppDimensions.normalize(15)),
           ),
           Expanded(
-              child: Padding(
-            padding: Space.hf(0.25).l(0.5),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  data['company'].toUpperCase(),
-                  style: AppText.l1b,
-                ),
-                Padding(
-                  padding: Space.vf(0.25),
-                  child: Text(
-                    data['position'].toUpperCase(),
-                    style: AppText.l1b,
+            child: Padding(
+              padding: Space.hf(0.25).l(0.5),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(data['company'].toUpperCase(), style: AppText.l1b),
+                  Padding(
+                    padding: Space.vf(0.25),
+                    child: Text(
+                      data['position'].toUpperCase(),
+                      style: AppText.l1b,
+                    ),
                   ),
-                ),
-                Text(
-                  data['duration'],
-                  style: AppText.l1b,
-                ),
-                NeumorphicButton(
-                  onPressed: () async {
-                    await launchLink(data['site']);
-                  },
-                  margin: Space.z!.t(0.75),
-                  padding: Space.all(0.75, 0.25),
-                  style: NeumorphicStyle(
-                    depth: AppDimensions.normalize(1),
-                    color: AppColors.black2,
-                    border: const NeumorphicBorder(color: AppColors.black5),
-                  ),
-                  child: Wrap(
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      Text(
-                        data['btnTitle'],
-                        style: AppText.l1!,
+                  Text(data['duration'], style: AppText.l1b),
+                  Semantics(
+                    label: 'Visit ${data['company']} website',
+                    button: true,
+                    child: Tooltip(
+                      message: data['site'],
+                      child: GestureDetector(
+                        onSecondaryTap: () {
+                          Clipboard.setData(ClipboardData(text: data['site']));
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                'Link copied to clipboard: ${data['site']}',
+                              ),
+                              behavior: SnackBarBehavior.floating,
+                            ),
+                          );
+                        },
+                        child: NeumorphicButton(
+                          onPressed: () async {
+                            await launchLink(data['site']);
+                          },
+                          margin: Space.z!.t(0.75),
+                          padding: Space.all(0.75, 0.25),
+                          style: NeumorphicStyle(
+                            depth: AppDimensions.normalize(1),
+                            color: AppColors.black2,
+                            border: const NeumorphicBorder(
+                              color: AppColors.black5,
+                            ),
+                          ),
+                          child: Wrap(
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Text(data['btnTitle'], style: AppText.l1!),
+                            ],
+                          ),
+                        ),
                       ),
-                    ],
+                    ),
                   ),
-                )
-              ],
+                ],
+              ),
             ),
-          )),
+          ),
           Expanded(
             child: Text(
               data['experience'],

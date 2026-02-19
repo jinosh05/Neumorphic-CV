@@ -7,11 +7,8 @@ import 'package:neumorphic_cv/constants/colors.dart';
 import '../configs/app_typography.dart';
 
 class SkillWidget extends StatelessWidget {
-  const SkillWidget({
-    super.key,
-    required this.name,
-    required this.rating,
-  }) : assert(rating <= 5 && rating >= 0, "Value can't be other than 0 to 5");
+  const SkillWidget({super.key, required this.name, required this.rating})
+    : assert(rating <= 5 && rating >= 0, "Value can't be other than 0 to 5");
 
   final String name;
 
@@ -20,36 +17,29 @@ class SkillWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Neumorphic(
-      margin: Space.z!.b(0.75),
-      padding: Space.all(0.5, 0.35),
-      style: NeumorphicStyle(
-        depth: AppDimensions.normalize(1),
-        color: AppColors.black4,
-        border: const NeumorphicBorder(color: AppColors.black5),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: Text(
-              name,
-              style: AppText.l1!.tsc(0.8),
-            ),
-          ),
-          for (var i = 0; i < 5; i++)
-            _SkillIndicatior(
-              enabled: i < rating,
-            ),
-        ],
+    return Semantics(
+      label: 'Skill: $name, Rating: $rating out 5',
+      child: Neumorphic(
+        margin: Space.z!.b(0.75),
+        padding: Space.all(0.5, 0.35),
+        style: NeumorphicStyle(
+          depth: AppDimensions.normalize(1),
+          color: AppColors.black4,
+          border: const NeumorphicBorder(color: AppColors.black5),
+        ),
+        child: Row(
+          children: [
+            Expanded(child: Text(name, style: AppText.l1!.tsc(0.8))),
+            for (var i = 0; i < 5; i++) _SkillIndicatior(enabled: i < rating),
+          ],
+        ),
       ),
     );
   }
 }
 
 class _SkillIndicatior extends StatelessWidget {
-  const _SkillIndicatior({
-    required this.enabled,
-  });
+  const _SkillIndicatior({required this.enabled});
 
   final bool enabled;
 
@@ -71,9 +61,10 @@ class _SkillIndicatior extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                      spreadRadius: 2,
-                      blurRadius: 2,
-                      color: AppColors.lightBlue.withOpacity(0.5))
+                    spreadRadius: 2,
+                    blurRadius: 2,
+                    color: AppColors.lightBlue.withOpacity(0.5),
+                  ),
                 ],
                 gradient: RadialGradient(
                   colors: [

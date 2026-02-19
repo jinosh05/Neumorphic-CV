@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/configs/app_dimensions.dart';
 import 'package:neumorphic_cv/configs/space.dart';
@@ -25,54 +26,63 @@ class SoftwareWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return NeumorphicButton(
-      onPressed: () async {
-        if (url != null) {
-          await launchLink(url);
-        }
-      },
-      margin: Space.z!.b(0.75),
-      padding: Space.all(0.5, 0.35),
-      style: NeumorphicStyle(
-        depth: AppDimensions.normalize(1),
-        color: AppColors.black4,
-        border: const NeumorphicBorder(color: AppColors.black5),
-      ),
-      child: Row(
-        children: [
-          Expanded(
+    return Semantics(
+      label:
+          'Software: ${name ?? 'Skill'}, Rating: $rating out 5${url != null ? ', Link available' : ''}',
+      button: url != null,
+      child: Tooltip(
+        message: url ?? '',
+        child: GestureDetector(
+          onSecondaryTap: url != null
+              ? () {
+                  Clipboard.setData(ClipboardData(text: url!));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Link copied to clipboard: $url'),
+                      behavior: SnackBarBehavior.floating,
+                    ),
+                  );
+                }
+              : null,
+          child: NeumorphicButton(
+            onPressed: () async {
+              if (url != null) {
+                await launchLink(url);
+              }
+            },
+            margin: Space.z!.b(0.75),
+            padding: Space.all(0.5, 0.35),
+            style: NeumorphicStyle(
+              depth: AppDimensions.normalize(1),
+              color: AppColors.black4,
+              border: const NeumorphicBorder(color: AppColors.black5),
+            ),
             child: Row(
               children: [
-                AppImage(
-                  image,
-                  height: AppDimensions.space(1),
+                Expanded(
+                  child: Row(
+                    children: [
+                      AppImage(image, height: AppDimensions.space(1)),
+                      Space.x!,
+                      name != null
+                          ? Expanded(child: Text(name!, style: AppText.l1))
+                          : const SizedBox(),
+                    ],
+                  ),
                 ),
-                Space.x!,
-                name != null
-                    ? Expanded(
-                        child: Text(
-                          name!,
-                          style: AppText.l1,
-                        ),
-                      )
-                    : const SizedBox(),
+                for (var i = 0; i < 5; i++)
+                  _Softwarendicatior(enabled: i < rating),
               ],
             ),
           ),
-          for (var i = 0; i < 5; i++)
-            _Softwarendicatior(
-              enabled: i < rating,
-            ),
-        ],
+        ),
       ),
     );
   }
 }
 
 class _Softwarendicatior extends StatelessWidget {
-  const _Softwarendicatior({
-    required this.enabled,
-  });
+  const _Softwarendicatior({required this.enabled});
 
   final bool enabled;
 
@@ -94,16 +104,14 @@ class _Softwarendicatior extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                      spreadRadius: 2,
-                      blurRadius: 2,
-                      color: AppColors.yellow.withOpacity(0.5))
+                    spreadRadius: 2,
+                    blurRadius: 2,
+                    color: AppColors.yellow.withOpacity(0.5),
+                  ),
                 ],
                 gradient: LinearGradient(
                   begin: Alignment.centerLeft,
-                  colors: [
-                    AppColors.red.withOpacity(0.5),
-                    AppColors.yellow,
-                  ],
+                  colors: [AppColors.red.withOpacity(0.5), AppColors.yellow],
                 ),
               ),
             )

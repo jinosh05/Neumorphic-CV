@@ -26,26 +26,26 @@ class _DarkCVDesktop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Space.y!,
-                    Text(
-                      S.aboutMe,
-                      style: AppText.b2b!.gilda(),
-                    ),
+                    Text(S.aboutMe, style: AppText.b2b!.gilda()),
                     Space.yf(0.75),
-                    Card(
-                      elevation: 5,
-                      surfaceTintColor: Colors.white.withOpacity(0.1),
-                      color: Colors.white.withOpacity(0.05),
-                      margin: Space.z,
-                      child: Padding(
-                        padding: Space.all(1),
-                        child: const Text(Env.aboutMe),
+                    SelectionArea(
+                      child: Card(
+                        elevation: 5,
+                        surfaceTintColor: Colors.white.withOpacity(0.1),
+                        color: Colors.white.withOpacity(0.05),
+                        margin: Space.z,
+                        child: Padding(
+                          padding: Space.all(1),
+                          child: const Text(Env.aboutMe),
+                        ),
                       ),
                     ),
                     Space.y1!,
                     const ShadowedText(
-                        text: S.skills,
-                        textColor: AppColors.lightBlue,
-                        shadowColor: AppColors.darkBlue),
+                      text: S.skills,
+                      textColor: AppColors.lightBlue,
+                      shadowColor: AppColors.darkBlue,
+                    ),
                     Space.y1!,
                     for (var i = 0; i < Env.skills.length; i++)
                       SkillWidget(
@@ -54,9 +54,10 @@ class _DarkCVDesktop extends StatelessWidget {
                       ),
                     Space.y1!,
                     const ShadowedText(
-                        text: S.software,
-                        textColor: AppColors.red,
-                        shadowColor: AppColors.yellow),
+                      text: S.software,
+                      textColor: AppColors.red,
+                      shadowColor: AppColors.yellow,
+                    ),
                     Space.y1!,
                     for (var i = 0; i < Env.softwares.length; i++)
                       SoftwareWidget(
@@ -86,10 +87,7 @@ class _DarkCVDesktop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Space.y!,
-                    Text(
-                      S.experience,
-                      style: AppText.b2b!.gilda(),
-                    ),
+                    Text(S.experience, style: AppText.b2b!.gilda()),
                     Space.yf(0.75),
                     for (var i = 0; i < Env.experiences.length; i++)
                       _ExperienceCard(Env.experiences[i]),
@@ -100,9 +98,7 @@ class _DarkCVDesktop extends StatelessWidget {
                     ),
                     Space.y1!,
                     for (var i = 0; i < Env.education.length; i++)
-                      EducationCard(
-                        data: Env.education[i],
-                      ),
+                      EducationCard(data: Env.education[i]),
                     Space.y1!,
                     Wrap(
                       spacing: AppDimensions.normalize(7),
@@ -120,9 +116,7 @@ class _DarkCVDesktop extends StatelessWidget {
                     ),
                     Space.y1!,
                     for (var i = 0; i < Env.appsInfo.length; i++)
-                      AppInfoWidget(
-                        data: Env.appsInfo[i],
-                      ),
+                      AppInfoWidget(data: Env.appsInfo[i]),
                     Space.y1!,
                     ShadowedText(
                       text: "${S.note.toUpperCase()} :- ",
@@ -130,14 +124,11 @@ class _DarkCVDesktop extends StatelessWidget {
                       shadowColor: AppColors.lightBlue,
                     ),
                     Space.y!,
-                    Text(
-                      S.noteMsg,
-                      style: AppText.b2!,
-                    ),
+                    SelectionArea(child: Text(S.noteMsg, style: AppText.b2!)),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
         Space.yf(1.5),
