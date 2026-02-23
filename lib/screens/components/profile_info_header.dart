@@ -32,6 +32,7 @@ class _ProfileInfoHeader extends StatelessWidget {
                     width: AppDimensions.width(60),
                     child: Text(Env.address, style: AppText.l1b),
                   ),
+                  Space.y1!,
                   UI.isPortrait ? const SizedBox() : const _LinksWrap(),
                 ],
               ),

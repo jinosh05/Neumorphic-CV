@@ -1,88 +1,74 @@
-# neumorphic_cv
+# Neumorphic CV 🚀
 
+A sleek, professional, and responsive Neumorphic CV built with Pure Flutter. Show off your portfolio with a modern UI that works across Mobile, Tablet, and Web.
 
-Wanna try Neumorphism, fork this repo and try our latest Neumorphic CV.
-* Easily understandable and responsive code . 
-* Just edit the lib/env.dart file and get your work done.
+> [!TIP]
+> **Neumorphism** (or soft UI) is a design trend that focuses on minimal, soft shadows and light to create a 3D effect on a 2D surface.
 
+## ✨ Features
 
+- 📱 **Fully Responsive**: Adapts seamlessly to Mobile, Tablet, and Desktop screens.
+- 🎨 **Neumorphic Design**: Modern, premium "Soft UI" aesthetic.
+- ⚙️ **Configurable**: Easily customize your info via `lib/env.dart`.
+- 🔗 **Interactive**: Includes clickable social links and project buttons.
+- ⚡ **High Performance**: Built with Flutter for smooth animations and transitions.
 
-## Packages Used
+## 🛠️ Built With
 
-- [Flutter_Svg Package](https://pub.dev/packages/flutter_svg)
-- [Url Launcher Package](https://pub.dev/packages/url_launcher)
-- [Flutter_Neumorphic Package](https://github.com/jinosh05/Flutter-Neumorphic)
- 
+- **Flutter**: The core framework.
+- [**Flutter_Neumorphic**](https://github.com/jinosh05/Flutter-Neumorphic): Custom fork for advanced neumorphic components.
+- [**Flutter_Svg**](https://pub.dev/packages/flutter_svg): For high-quality vector icons.
+- [**Url Launcher**](https://pub.dev/packages/url_launcher): To handle external links and contact actions.
 
-## Screenshots
+## 📸 Screenshots
 
-### Mobile<br/> 
-![](screenshots/mobile_land.png)
-<br/>
-<br/>
-![](screenshots/mobile_portrait.png)<br/>
-<br/>
-### Tablet<br/> 
-![](screenshots/tab_portrait.png)
-<br/>
-<br/>
-![](screenshots/tab_landscape.png)
+### Mobile View
+| Portrait | Landscape |
+| :---: | :---: |
+| ![Mobile Portrait](screenshots/mobile_portrait.png) | ![Mobile Landscape](screenshots/mobile_land.png) |
 
-## Build Instructions
+### Tablet View
+| Portrait | Landscape |
+| :---: | :---: |
+| ![Tablet Portrait](screenshots/tab_portrait.png) | ![Tablet Landscape](screenshots/tab_landscape.png) |
 
-### Install Flutter
+## 🚀 Getting Started
 
-Built with [Flutter](https://flutter.dev/), you need to have `Flutter` dev tools
-installed on your computer to compile the project. check [Flutter Documentation](https://flutter.dev/docs)
- to learn how to install `Flutter` and initialize a Flutter App.
- 
-  
-### Run App
+### 1. Prerequisites
+Ensure you have the [Flutter SDK](https://flutter.dev/docs/get-started/install) installed. This project currently supports **Flutter 3.10.x** and above.
 
-If you have an AVD or real device attached, you can do
+### 2. Configuration
+Personalize the CV by editing the `lib/env.dart` file. Replace the constants with your own information, project links, and experience details.
 
+### 3. Running Locally
+```bash
+# Clone the repository
+git clone https://github.com/jinosh05/Neumorphic-CV.git
+
+# Navigate to project directory
+cd Neumorphic-CV
+
+# Get dependencies
+flutter pub get
+
+# Run the app
+flutter run
 ```
-flutter run 
+
+### 4. Build for Web
+```bash
+flutter build web --release
 ```
 
-### Build APK
- 
-
-You may build the App with Flutter's [Deployment Documentation](https://flutter.dev/docs).
-
-In order to build a fat APK, you can do 
+### 5. Build for Android (APK)
+```bash
+flutter build apk --release
 ```
-flutter build apk
-```
-and find the output in `build/app/outputs/flutter-apk/app-release.apk`
-
-
-
-
-# Dev hints
-
-Currently supports flutter: 3.10.0
-<br><br>
-  
-# How to get this Repo and run it on your System
-
-I kept the code as original as possible with proper Commented Guides for anyone to understand and implement. Still you need to follow these steps.
-  - First get Flutter and all necessary SDK/Plugins installed. Full guide here [Flutter: Get Started](https://flutter.dev/docs/get-started/install)
-  - Now download this [Repo](https://github.com/jinosh05/Neumorphic-CV/archive/refs/heads/master.zip)
-  - Extract the Repo into your newly created **Neumorphic-CV** and replace the required files.
-  - Now you can Finally run VS-Code or Android Studio whichever you prefer and get the flutter packages and just run the App.
-  
-# Download the APK
-
-Download the release APK 
-
-
+The output will be located in `build/app/outputs/flutter-apk/app-release.apk`.
 
 ## 🔑 License
-- This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
-
-
-
-
+---
+Built with ❤️ by [Jinosh D](https://github.com/jinosh05)
