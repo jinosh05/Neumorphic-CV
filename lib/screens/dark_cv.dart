@@ -12,6 +12,7 @@ import 'package:neumorphic_cv/env.dart';
 import 'package:neumorphic_cv/screens/components/profile_pic.dart';
 import 'package:neumorphic_cv/widgets/animated_gradient.dart';
 import 'package:neumorphic_cv/widgets/app_image.dart';
+import 'package:neumorphic_cv/widgets/download_resume_button.dart';
 import 'package:neumorphic_cv/widgets/links_buttons.dart';
 import 'package:neumorphic_cv/widgets/shadowed_text.dart';
 import 'package:neumorphic_cv/widgets/software_widget.dart';

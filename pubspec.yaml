@@ -13,6 +13,7 @@ dependencies:
   flutter_svg: ^2.2.1
   url_launcher: ^6.3.2
   url_strategy: ^0.3.0
+  web: ^1.1.0
   flutter_neumorphic:
     git: https://github.com/jinosh05/Flutter-Neumorphic
 
@@ -31,6 +32,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/
 
   fonts:
     - family: Roboto

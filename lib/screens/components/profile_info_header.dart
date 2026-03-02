@@ -55,6 +55,7 @@ class _LinksWrap extends StatelessWidget {
       children: [
         for (var i = 0; i < Env.btnlinks.length; i++)
           LinksButtons(data: Env.btnlinks[i]),
+        const DownloadResumeButton(),
       ],
     );
   }
