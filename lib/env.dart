@@ -281,12 +281,12 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
         {
           'icon': Assets.windows,
           'url':
-              "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.27/Al-Quran-Multilingual-Setup.exe",
+              "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.42/Al-Quran-Multilingual-Setup.exe",
         },
         {
           'icon': Assets.linux,
           'url':
-              "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.27/Al-Quran-Multilingual-x86_64.AppImage",
+              "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop/releases/download/1.0.42/Al-Quran-Multilingual-x86_64.AppImage",
         },
         {
           'icon': Assets.appstore,
