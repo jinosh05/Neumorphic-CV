@@ -2,13 +2,11 @@ import 'dart:developer';
 
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:neumorphic_cv/screens/dark_cv.dart';
-import 'package:url_strategy/url_strategy.dart';
 
 import 'configs/app.dart';
 import 'configs/apptheme.dart';
 
 void main() async {
-  setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
   // SystemChrome.setPreferredOrientations(
   //     [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);

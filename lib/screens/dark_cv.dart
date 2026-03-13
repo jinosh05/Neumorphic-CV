@@ -35,24 +35,26 @@ class DarkCV extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        // height: UI.height,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [AppColors.black2, AppColors.black3],
-            begin: Alignment.topLeft,
-            end: Alignment.topRight,
+      body: SelectionArea(
+        child: Container(
+          // height: UI.height,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [AppColors.black2, AppColors.black3],
+              begin: Alignment.topLeft,
+              end: Alignment.topRight,
+            ),
           ),
+          child: UI.isPortrait ? const _DarkCVMobile() : _DarkCVDesktop(),
+          //  ScreenTypeLayout.builder(
+          //   mobile: (context) {
+          //     return _DarkCVMobile();
+          //   },
+          //   desktop: (context) {
+          //     return const _DarkCVDesktop();
+          //   },
+          // ),
         ),
-        child: UI.isPortrait ? const _DarkCVMobile() : _DarkCVDesktop(),
-        //  ScreenTypeLayout.builder(
-        //   mobile: (context) {
-        //     return _DarkCVMobile();
-        //   },
-        //   desktop: (context) {
-        //     return const _DarkCVDesktop();
-        //   },
-        // ),
       ),
     );
   }
