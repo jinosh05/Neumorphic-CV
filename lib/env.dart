@@ -257,6 +257,13 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
       ],
     },
     {
+      'img': Assets.hiLightMedia,
+      'name': "Hi-Light Media",
+      'description':
+          "High-performance digital signage and media playback application built for cross-platform devices.",
+      'links': [],
+    },
+    {
       'img': Assets.quran,
       'name': "Al Quran Multilingual Pro",
       'description':
