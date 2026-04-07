@@ -379,11 +379,22 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
       'links': [],
     },
     {
-      'img': Assets.placeholder,
-      'name': "Firstock (Trading App POC)",
+      'img': Assets.firstock,
+      'name': "Firstock - Trade & Invest",
       'description':
-          "Real-time trading application with WebSocket & custom charts.",
-      'links': [],
+          "A modern trading and investment platform for Stocks, F&O, and Mutual Funds with real-time data and advanced charting.",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url':
+              'https://apps.apple.com/in/app/firstock-trade-invest/id6746480444',
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              'https://play.google.com/store/apps/details?id=in.firstock.mobile',
+        },
+      ],
     },
     {
       'img': Assets.placeholder,
