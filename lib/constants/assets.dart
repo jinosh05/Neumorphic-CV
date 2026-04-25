@@ -62,6 +62,10 @@ class Assets {
   static const String hiLightMedia = "${_iconBase}hi_light_media.png";
 
   static const String firstock = "${_iconBase}firstock.webp";
+
+  static const String youtubeIcon = "${_iconBase}youtube.svg";
+
+  static const String tamizhAasan = "${_iconBase}tamizh_aasan.png";
 }
 
 

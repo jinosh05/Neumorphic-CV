@@ -118,6 +118,14 @@ class _DarkCVDesktop extends StatelessWidget {
                     for (var i = 0; i < Env.appsInfo.length; i++)
                       AppInfoWidget(data: Env.appsInfo[i]),
                     Space.y1!,
+                    const ShadowedText(
+                      text: S.youtubeChannel,
+                      textColor: Color(0xFFFF3D00),
+                      shadowColor: Colors.deepOrange,
+                    ),
+                    Space.y1!,
+                    const YoutubeChannelWidget(),
+                    Space.y1!,
                     ShadowedText(
                       text: "${S.note.toUpperCase()} :- ",
                       textColor: Colors.white,

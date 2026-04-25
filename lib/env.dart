@@ -417,6 +417,16 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
   ];
 
   // ─────────────────────────────────────────────
+  //  YouTube Channel
+  // ─────────────────────────────────────────────
+  static const Map<String, String> youtubeChannel = {
+    'name': 'Tamizh Aasan',
+    'subtitle': 'AI-Built Tamil Educational Channel',
+    'tools': 'Flux-2 Images · Python Pillow · Indic TTS & F5 Voice · FFmpeg',
+    'url': 'https://www.youtube.com/@TamizhAasan',
+  };
+
+  // ─────────────────────────────────────────────
   //  Education
   // ─────────────────────────────────────────────
   static const List<Map<String, dynamic>> education = [

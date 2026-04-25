@@ -20,6 +20,7 @@ import 'package:neumorphic_cv/widgets/software_widget.dart';
 import '../widgets/app_info_widget.dart';
 import '../widgets/circle_bg.dart';
 import '../widgets/skill_widget.dart';
+import '../widgets/youtube_channel_widget.dart';
 
 part 'components/education_card.dart';
 part 'components/experience_card.dart';

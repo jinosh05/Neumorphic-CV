@@ -28,4 +28,6 @@ class S {
 
   static const String noteMsg =
       "The Above mentioned apps are currently available at Online, for more information contact me directly";
+
+  static const String youtubeChannel = "YouTube Channel";
 }
