@@ -30,4 +30,6 @@ class S {
       "The Above mentioned apps are currently available at Online, for more information contact me directly";
 
   static const String youtubeChannel = "YouTube Channel";
+
+  static const String openSourcePackages = "Open Source Packages";
 }

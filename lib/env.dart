@@ -7,9 +7,10 @@ class Env {
   // ─────────────────────────────────────────────
   static const String imageURL = Assets.myPic;
   static const String name = "Jinosh D";
-  static const String profession = "Full-Stack Flutter & FastAPI Developer";
+  static const String profession =
+      "Flutter Team Lead · Mobile Architect · Full-Stack Developer";
   static const String tagline =
-      "Building cross-platform products — from pixel to production.";
+      "Leading cross-platform teams — from architecture to App Store.";
   static const String address =
       "Tondiarpet, Chennai – 600081\nTamil Nadu, India";
 
@@ -53,13 +54,13 @@ class Env {
   //  About Me
   // ─────────────────────────────────────────────
   static const String aboutMe = """
-I'm a results-driven Full-Stack Developer with 5+ years of experience designing, building, and shipping high-performance cross-platform applications — from a single codebase to five platforms simultaneously.
+Flutter Team Lead with 5+ years of experience architecting and delivering cross-platform applications for Android, iOS, Windows, Linux, and macOS — from a single codebase to production on five platforms simultaneously.
 
-My core expertise lies in Flutter & Dart for mobile, web, and desktop development, paired with FastAPI (Python) for building robust backend APIs and feature-rich admin dashboards. I take pride in delivering pixel-perfect, intuitive UI/UX that users love, backed by clean, maintainable architecture.
+I lead development teams, mentor junior developers, and own the full product lifecycle — from architecture design and code review to App Store and Play Store deployment. My core stack is Flutter & Dart for mobile, web, and desktop, paired with FastAPI (Python) for scalable REST APIs and admin dashboards.
 
-I've worked across early-stage startups, growing product teams, and freelance engagements — adapting quickly, owning end-to-end delivery, and consistently shipping products that reach real users on the App Store, Play Store, and beyond.
+I've driven end-to-end feature delivery across early-stage startups, growing product teams, and freelance engagements — integrating AI capabilities (Gemini APIs), real-time systems (WebSockets, MQTT), and cloud backends (AWS, Firebase) while keeping the codebase clean and maintainable.
 
-What sets me apart is my ability to go beyond the frontend — I architect complete solutions, from data models and REST APIs to state management, offline storage, deep-link handling, and production deployment.
+What sets me apart is the ability to go beyond the frontend — I define architecture, shape technical strategy, and ship products that reach real users.
 """;
 
   // ─────────────────────────────────────────────
@@ -80,17 +81,21 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
   //  Technical Skills
   // ─────────────────────────────────────────────
   static const List<String> technicalSkill = [
-    "Flutter (Mobile · Web · Desktop)",
+    "Flutter (Mobile · Web · Desktop · macOS · Linux · Windows)",
     "Dart — BLoC, Cubit, Provider",
+    "Team Leadership & Developer Mentorship",
     "MVC & MVVM Architecture",
     "FastAPI (Python) — REST APIs & Admin Dashboards",
+    "AWS — Cloud Deployment & Infrastructure",
+    "HTMX & Jinja2 — Admin Dashboard UI",
     "Firebase — Auth, Firestore, FCM, Storage",
+    "AI Integration — Gemini APIs",
     "Google Maps & Location Services",
-    "Hive · SQLite (sqflite) · SharedPreferences",
+    "MySQL · SQLite (sqflite) · Hive · SharedPreferences",
     "WebSocket & MQTT Protocol",
-    "Custom Package Development",
+    "Custom Flutter Package Development (pub.dev)",
+    "CI/CD Pipelines",
     "Deep Links & Universal Links (iOS & Android)",
-    "Responsive Flutter Web",
     "App Store & Play Store Publishing",
     "Git — GitHub / GitLab",
     "Agile / Scrum Development",
@@ -155,7 +160,7 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
     {
       "company": "Excrin ThinkLabs",
       'logo': Assets.excrin,
-      'position': "Flutter Developer",
+      'position': "Junior Flutter Developer",
       'duration': "Jun 2021 – Jun 2022",
       'experience': """
 • Developed a fully functional E-commerce Food Delivery application end-to-end.
@@ -172,10 +177,11 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
       'position': "Flutter Developer",
       'duration': "Jul 2022 – May 2023",
       'experience': """
-• Developed two feature-rich E-commerce applications for iOS and Android.
-• Published apps on both the Apple App Store and Google Play Store.
+• Specialised in iOS-specific Flutter development, ensuring native performance and compatibility.
+• Developed two feature-rich E-commerce applications for iOS and Android, published on App Store and Play Store.
 • Built an ERP-integrated mobile application for internal business operations.
 • Developed a dedicated Delivery Boy application with real-time order tracking.
+• Integrated Firebase Analytics (GA4) and coordinated with the SEO team.
 """,
       'site': 'https://connectivelinkstechnology.com/',
       'btnTitle': 'CLT',
@@ -183,10 +189,11 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
     {
       "company": "MindOrigin Technologies",
       'logo': Assets.mot,
-      'position': "Senior Flutter Developer",
+      'position': "Senior Flutter Developer — Team Lead",
       'duration': "Jul 2023 – Jul 2024",
       'experience': """
-• Architected and developed a complete POC for a real-time Trading application targeting Flutter Android, iOS, and Web.
+• Led a Flutter team of 3 developers for a large-scale real-time trading application targeting Android, iOS, and Web.
+• Managed the full feature lifecycle — from planning and design through to delivery.
 • Built and published custom Flutter chart packages with specialised candlestick and indicator support.
 • Integrated WebSocket and MQTT protocols for live market data streaming.
 • Mentored junior developers and established best practices for the Flutter team.
@@ -195,28 +202,30 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
       'btnTitle': 'MOT',
     },
     {
-      'company': 'Develup',
+      'company': 'DevelUp Centre of Excellence',
       'logo': Assets.develup,
-      'position': 'Flutter Developer — Freelance',
+      'position': 'Senior Flutter Developer — Contract',
       'duration': 'Feb 2025 – Aug 2025',
       'experience': """
-• Built and shipped a production-ready Flutter app across Android and iOS from scratch.
+• Played a key leadership role in building the Develup mobile application from the ground up.
+• Defined overall app architecture and enforced development best practices across the team.
 • Implemented AI-powered job search features, onboarding flows, and in-app interactions.
-• Owned complete Flutter development lifecycle — UI/UX, state management, API integration, and release management.
+• Ensured successful deployment and performance optimisation on both App Store and Play Store.
 """,
       'site': 'https://develup.com/',
       'btnTitle': 'Develup',
     },
     {
-      'company': 'Fellow Founder',
+      'company': 'Fellow Founder · Faithnet Technologies',
       'logo': Assets.fellowFounder,
-      'position': 'Flutter & FastAPI Developer',
+      'position': 'Lead Full-Stack Developer — Freelance',
       'duration': 'Jul 2024 – Present',
       'experience': """
-• Building and maintaining a cross-platform Flutter application with active releases on Android and iOS.
-• Developing and scaling FastAPI backend services — REST endpoints, JWT authentication, and database models.
-• Driving end-to-end feature development: UI/UX, BLoC state management, API integration, and App Store/Play Store publishing.
-• Collaborating directly with founders to shape product direction and technical strategy.
+• Architected and led end-to-end development of the Fellow Founder mobile app and its FastAPI backend, deployed on AWS.
+• Designed the admin dashboard using HTMX and Jinja2 Templates.
+• Built an AI-driven networking platform leveraging Gemini APIs.
+• Managed full App Store and Google Play deployment pipeline for a seamless cross-platform launch.
+• Collaborated directly with founders to shape product direction and technical strategy.
 """,
       'site': 'https://www.fellowfounder.in/',
       'btnTitle': 'Fellow Founder',
@@ -234,6 +243,32 @@ What sets me apart is my ability to go beyond the frontend — I architect compl
     "Malayalam",
     "Telugu",
     "Urdu",
+  ];
+
+  // ─────────────────────────────────────────────
+  //  Open Source — pub.dev Packages
+  // ─────────────────────────────────────────────
+  static const List<Map<String, String>> openSourcePackages = [
+    {
+      'name': 'photofilters',
+      'url': 'https://pub.dev/packages/photofilters',
+    },
+    {
+      'name': 'speech_to_text',
+      'url': 'https://pub.dev/packages/speech_to_text',
+    },
+    {
+      'name': 'fancy_bottom_navigation_plus',
+      'url': 'https://pub.dev/packages/fancy_bottom_navigation_plus',
+    },
+    {
+      'name': 'sizer_pro',
+      'url': 'https://pub.dev/packages/sizer_pro',
+    },
+    {
+      'name': 'flutter_neumorphic',
+      'url': 'https://pub.dev/packages/flutter_neumorphic',
+    },
   ];
 
   // ─────────────────────────────────────────────

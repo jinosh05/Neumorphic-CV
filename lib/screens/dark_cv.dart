@@ -19,6 +19,7 @@ import 'package:neumorphic_cv/widgets/software_widget.dart';
 
 import '../widgets/app_info_widget.dart';
 import '../widgets/circle_bg.dart';
+import '../widgets/open_source_widget.dart';
 import '../widgets/skill_widget.dart';
 import '../widgets/youtube_channel_widget.dart';
 

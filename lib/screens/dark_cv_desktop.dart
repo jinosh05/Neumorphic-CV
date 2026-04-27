@@ -75,6 +75,18 @@ class _DarkCVDesktop extends StatelessWidget {
                     Space.y!,
                     for (var i = 0; i < Env.technicalSkill.length; i++)
                       _TechnicalCard(Env.technicalSkill[i]),
+                    Space.y1!,
+                    const ShadowedText(
+                      text: S.openSourcePackages,
+                      textColor: Color(0xFF00BCD4),
+                      shadowColor: Color(0xFF006064),
+                    ),
+                    Space.y!,
+                    for (var i = 0; i < Env.openSourcePackages.length; i++)
+                      OpenSourceWidget(
+                        name: Env.openSourcePackages[i]['name']!,
+                        url: Env.openSourcePackages[i]['url']!,
+                      ),
                   ],
                 ),
               ),

@@ -106,6 +106,18 @@ class _DarkCVMobileState extends State<_DarkCVMobile> {
               for (var i = 0; i < Env.technicalSkill.length; i++)
                 _TechnicalCard(Env.technicalSkill[i]),
               Space.y1!,
+              const ShadowedText(
+                text: S.openSourcePackages,
+                textColor: Color(0xFF00BCD4),
+                shadowColor: Color(0xFF006064),
+              ),
+              Space.y!,
+              for (var i = 0; i < Env.openSourcePackages.length; i++)
+                OpenSourceWidget(
+                  name: Env.openSourcePackages[i]['name']!,
+                  url: Env.openSourcePackages[i]['url']!,
+                ),
+              Space.y1!,
               Wrap(
                 spacing: AppDimensions.normalize(7),
                 runSpacing: AppDimensions.normalize(7),
