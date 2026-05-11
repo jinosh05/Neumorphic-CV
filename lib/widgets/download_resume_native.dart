@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Future<void> triggerDownload() async {
-  const assetPath = 'assets/Jinosh Resume.pdf';
+  const assetPath = 'assets/Jinosh D Senior Flutter Resume.pdf';
   final byteData = await rootBundle.load(assetPath);
   final bytes = byteData.buffer.asUint8List();
 
