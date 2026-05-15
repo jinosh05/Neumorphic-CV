@@ -1,0 +1,9 @@
+# https://llmstxt.org/
+
+---
+title: "Jinosh D - Full-Stack Flutter & FastAPI Developer"
+description: "Portfolio and CV of Jinosh D, a Full-Stack Flutter & FastAPI Developer building high-performance cross-platform applications."
+language: en
+alternate-url: https://jinosh05.github.io/Neumorphic-CV/
+last-updated: 2026-05-11
+source: https://github.com/jinosh05/Neumorphic-CV

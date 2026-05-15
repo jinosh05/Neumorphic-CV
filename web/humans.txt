@@ -1,0 +1,11 @@
+# https://humanstxt.org/
+
+---
+site: Jinosh D | Full-Stack Flutter & FastAPI Developer
+url: https://jinosh05.github.io/Neumorphic-CV/
+language: en
+owner:
+  name: Jinosh D
+  email: jinosh.developer@email.com
+  github: https://github.com/jinosh05
+last-updated: 2026-05-11
