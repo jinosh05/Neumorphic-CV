@@ -54,13 +54,17 @@ class Env {
   //  About Me
   // ─────────────────────────────────────────────
   static const String aboutMe = """
-Flutter Team Lead with 5+ years of experience architecting and delivering cross-platform applications for Android, iOS, Windows, Linux, and macOS — from a single codebase to production on five platforms simultaneously.
+Delivered 13+ apps to Playstore and Appstore. As a Flutter Team Lead and Mobile Architect with over 5 years of experience, I specialize in defining robust software architectures and leading development teams through the entire product lifecycle. I am deeply passionate about mentoring developers while driving complex technical strategies to deliver high-performance, cross-platform applications.  
 
-I lead development teams, mentor junior developers, and own the full product lifecycle — from architecture design and code review to App Store and Play Store deployment. My core stack is Flutter & Dart for mobile, web, and desktop, paired with FastAPI (Python) for scalable REST APIs and admin dashboards.
+Key Competencies & Leadership Highlights:
 
-I've driven end-to-end feature delivery across early-stage startups, growing product teams, and freelance engagements — integrating AI capabilities (Gemini APIs), real-time systems (WebSockets, MQTT), and cloud backends (AWS, Firebase) while keeping the codebase clean and maintainable.
+* Architectural Strategy: Defined overall app architectures and enforced development best practices using MVC, MVVM, and Bloc design patterns.  
 
-What sets me apart is the ability to go beyond the frontend — I define architecture, shape technical strategy, and ship products that reach real users.
+* Team Leadership: Led a Flutter team of 3 developers for a large-scale, real-time trading application, managing the full feature lifecycle from planning to delivery.  
+
+* Cross-Platform Mastery: Expert in Dart and Flutter, successfully deploying seamless applications across Android, iOS, Windows, Linux, and macOS.  
+
+* CI/CD & Deployment: Managed full App Store and Google Play deployment pipelines to ensure seamless, optimized cross-platform launches.
 """;
 
   // ─────────────────────────────────────────────
@@ -218,8 +222,8 @@ What sets me apart is the ability to go beyond the frontend — I define archite
     {
       'company': 'Fellow Founder · Faithnet Technologies',
       'logo': Assets.fellowFounder,
-      'position': 'Lead Full-Stack Developer — Freelance',
-      'duration': 'Jul 2024 – Present',
+      'position': 'Lead Full-Stack Developer — Startup',
+      'duration': 'Jul 2024 – Jan 2026',
       'experience': """
 • Architected and led end-to-end development of the Fellow Founder mobile app and its FastAPI backend, deployed on AWS.
 • Designed the admin dashboard using HTMX and Jinja2 Templates.
@@ -229,6 +233,19 @@ What sets me apart is the ability to go beyond the frontend — I define archite
 """,
       'site': 'https://www.fellowfounder.in/',
       'btnTitle': 'Fellow Founder',
+    },
+    {
+      "company": "Excrin ThinkLabs",
+      'logo': Assets.excrin,
+      'position': "Full Stack React Developer",
+      'duration': "Feb 2026 – April 2026",
+      'experience': """
+• Worked with React Developers and System Architect for Fixing AI Built Website.
+• Fixed various Critical Bugs in both Frontend and Backend.
+• Worked with US Clients for the Product.
+""",
+      'site': 'https://excrin.com/',
+      'btnTitle': 'excrin.com',
     },
   ];
 
@@ -249,10 +266,7 @@ What sets me apart is the ability to go beyond the frontend — I define archite
   //  Open Source — pub.dev Packages
   // ─────────────────────────────────────────────
   static const List<Map<String, String>> openSourcePackages = [
-    {
-      'name': 'photofilters',
-      'url': 'https://pub.dev/packages/photofilters',
-    },
+    {'name': 'photofilters', 'url': 'https://pub.dev/packages/photofilters'},
     {
       'name': 'speech_to_text',
       'url': 'https://pub.dev/packages/speech_to_text',
@@ -261,10 +275,7 @@ What sets me apart is the ability to go beyond the frontend — I define archite
       'name': 'fancy_bottom_navigation_plus',
       'url': 'https://pub.dev/packages/fancy_bottom_navigation_plus',
     },
-    {
-      'name': 'sizer_pro',
-      'url': 'https://pub.dev/packages/sizer_pro',
-    },
+    {'name': 'sizer_pro', 'url': 'https://pub.dev/packages/sizer_pro'},
     {
       'name': 'flutter_neumorphic',
       'url': 'https://pub.dev/packages/flutter_neumorphic',
