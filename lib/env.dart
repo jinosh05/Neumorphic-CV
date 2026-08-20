@@ -468,7 +468,7 @@ Key Competencies & Leadership Highlights:
   static const Map<String, String> youtubeChannel = {
     'name': 'Tamizh Aasan',
     'subtitle': 'AI-Built Tamil Educational Channel',
-    'tools': 'Flux-2 Images · Python Pillow · Indic TTS & F5 Voice · FFmpeg',
+    'tools': 'Flux-2 Images · Python Pillow · Omnivoice · FFmpeg',
     'url': 'https://www.youtube.com/@TamizhAasan',
   };
 
