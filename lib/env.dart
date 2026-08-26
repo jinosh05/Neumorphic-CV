@@ -221,7 +221,7 @@ Key Competencies & Leadership Highlights:
     {
       'company': 'Fellow Founder · Faithnet Technologies',
       'logo': Assets.fellowFounder,
-      'position': 'Lead Full-Stack Developer — Startup',
+      'position': 'Lead Full-Stack Developer and CTO — Startup',
       'duration': 'Jul 2024 – Present',
       'experience': """
 • Architected and led end-to-end development of the Fellow Founder mobile app and its FastAPI backend, deployed on AWS.
