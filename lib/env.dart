@@ -54,7 +54,7 @@ class Env {
   //  About Me
   // ─────────────────────────────────────────────
   static const String aboutMe = """
-Delivered 13+ apps to Playstore and Appstore. As a Flutter Team Lead and Mobile Architect with over 5 years of experience, I specialize in defining robust software architectures and leading development teams through the entire product lifecycle. I am deeply passionate about mentoring developers while driving complex technical strategies to deliver high-performance, cross-platform applications.  
+Delivered 13+ apps to Playstore and Appstore. As a Flutter Team Lead and Mobile Architect with over 5+ years of experience, I specialize in defining robust software architectures and leading development teams through the entire product lifecycle. I am deeply passionate about mentoring developers while driving complex technical strategies to deliver high-performance, cross-platform applications.  
 
 Key Competencies & Leadership Highlights:
 
@@ -104,7 +104,6 @@ Key Competencies & Leadership Highlights:
     "Git — GitHub / GitLab",
     "Agile / Scrum Development",
     "RESTful API Integration",
-    "In-App Purchases (RevenueCat / Native)",
   ];
 
   // ─────────────────────────────────────────────
@@ -223,7 +222,7 @@ Key Competencies & Leadership Highlights:
       'company': 'Fellow Founder · Faithnet Technologies',
       'logo': Assets.fellowFounder,
       'position': 'Lead Full-Stack Developer — Startup',
-      'duration': 'Jul 2024 – Jan 2026',
+      'duration': 'Jul 2024 – Present',
       'experience': """
 • Architected and led end-to-end development of the Fellow Founder mobile app and its FastAPI backend, deployed on AWS.
 • Designed the admin dashboard using HTMX and Jinja2 Templates.
@@ -233,19 +232,6 @@ Key Competencies & Leadership Highlights:
 """,
       'site': 'https://www.fellowfounder.in/',
       'btnTitle': 'Fellow Founder',
-    },
-    {
-      "company": "Excrin ThinkLabs",
-      'logo': Assets.excrin,
-      'position': "Full Stack React Developer",
-      'duration': "Feb 2026 – April 2026",
-      'experience': """
-• Worked with React Developers and System Architect for Fixing AI Built Website.
-• Fixed various Critical Bugs in both Frontend and Backend.
-• Worked with US Clients for the Product.
-""",
-      'site': 'https://excrin.com/',
-      'btnTitle': 'excrin.com',
     },
   ];
 
