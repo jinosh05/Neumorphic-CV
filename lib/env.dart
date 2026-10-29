@@ -205,20 +205,6 @@ Key Competencies & Leadership Highlights:
       'btnTitle': 'MOT',
     },
     {
-      'company': 'DevelUp Centre of Excellence',
-      'logo': Assets.develup,
-      'position': 'Senior Flutter Developer — Contract',
-      'duration': 'Feb 2025 – Aug 2025',
-      'experience': """
-• Played a key leadership role in building the Develup mobile application from the ground up.
-• Defined overall app architecture and enforced development best practices across the team.
-• Implemented AI-powered job search features, onboarding flows, and in-app interactions.
-• Ensured successful deployment and performance optimisation on both App Store and Play Store.
-""",
-      'site': 'https://develup.com/',
-      'btnTitle': 'Develup',
-    },
-    {
       'company': 'Fellow Founder · Faithnet Technologies',
       'logo': Assets.fellowFounder,
       'position': 'Lead Full-Stack Developer and CTO — Startup',
@@ -309,6 +295,29 @@ Key Competencies & Leadership Highlights:
         {
           'icon': Assets.playstore,
           'url': "https://play.google.com/store/apps/details?id=jino.quran.app",
+        },
+      ],
+    },
+    {
+      'img': Assets.jigsaw,
+      'name': "Jigsaw — Desktop Game",
+      'description':
+          "A calm, level-based jigsaw puzzle game with accounts, progress sync and leaderboard, shipping native builds for Linux, Windows and macOS.",
+      'links': [
+        {
+          'icon': Assets.linux,
+          'url':
+              "https://github.com/jinosh05/jigsaw-desktop/releases/latest/download/Jigsaw-linux-x64.tar.gz",
+        },
+        {
+          'icon': Assets.windows,
+          'url':
+              "https://github.com/jinosh05/jigsaw-desktop/releases/latest/download/Jigsaw-windows-x64.zip",
+        },
+        {
+          'icon': Assets.macos,
+          'url':
+              "https://github.com/jinosh05/jigsaw-desktop/releases/latest/download/Jigsaw-macos-arm64.dmg",
         },
       ],
     },

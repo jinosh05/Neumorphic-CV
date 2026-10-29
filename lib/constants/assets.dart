@@ -66,6 +66,8 @@ class Assets {
   static const String youtubeIcon = "${_iconBase}youtube.svg";
 
   static const String tamizhAasan = "${_iconBase}tamizh_aasan.png";
+
+  static const String jigsaw = "${_iconBase}jigsaw.png";
 }
 
 
