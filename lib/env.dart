@@ -7,17 +7,19 @@ class Env {
   // ─────────────────────────────────────────────
   static const String imageURL = Assets.myPic;
   static const String name = "Jinosh D";
+  static const String dob = "09/09/2000";
   static const String profession =
       "Flutter Team Lead · Mobile Architect · Full-Stack Developer";
   static const String tagline =
       "Leading cross-platform teams — from architecture to App Store.";
+  static const String portfolio = "https://jinosh.netlify.app/";
   static const String address =
       "Tondiarpet, Chennai – 600081\nTamil Nadu, India";
 
   // ─────────────────────────────────────────────
   //  Contact
   // ─────────────────────────────────────────────
-  static const String mobile = "+91 88703 58783";
+  static const String mobile = "+918870358783";
   static const String gmailId = "jinosh05";
 
   // ─────────────────────────────────────────────
@@ -54,17 +56,19 @@ class Env {
   //  About Me
   // ─────────────────────────────────────────────
   static const String aboutMe = """
-Delivered 13+ apps to Playstore and Appstore. As a Flutter Team Lead and Mobile Architect with over 5+ years of experience, I specialize in defining robust software architectures and leading development teams through the entire product lifecycle. I am deeply passionate about mentoring developers while driving complex technical strategies to deliver high-performance, cross-platform applications.  
+Flutter Team Lead, Mobile Architect and CTO with nearly 5 years of experience and 13+ apps shipped across the Google Play Store and Apple App Store. I specialize in defining robust app architectures, leading cross-platform teams and taking products from first sketch to store release. I remain hands-on across architecture and implementation, and I care deeply about mentoring developers, clean architecture and long-term maintainability.
 
 Key Competencies & Leadership Highlights:
 
-* Architectural Strategy: Defined overall app architectures and enforced development best practices using MVC, MVVM, and Bloc design patterns.  
+* End-to-End Ownership: Worked across 18+ projects in e-commerce, fintech, education, networking, event booking and gaming — owning planning, architecture, development, testing, release and post-launch support.
 
-* Team Leadership: Led a Flutter team of 3 developers for a large-scale, real-time trading application, managing the full feature lifecycle from planning to delivery.  
+* Team Leadership & Mentorship: Led a Flutter team of 3 on a large-scale real-time trading platform and mentored junior developers while establishing Bloc/Riverpod, MVC/MVVM and code-review standards.
 
-* Cross-Platform Mastery: Expert in Dart and Flutter, successfully deploying seamless applications across Android, iOS, Windows, Linux, and macOS.  
+* Cross-Platform Delivery: Shipped production apps for Android, iOS, web, Windows, Linux and macOS — including the Al Quran app with 90+ languages across 5 platforms and the Jigsaw game on Play Store and desktop.
 
-* CI/CD & Deployment: Managed full App Store and Google Play deployment pipelines to ensure seamless, optimized cross-platform launches.
+* Current Focus: As CTO and App Developer at Faithnet Technologies, I built the Fellow Founder networking platform from scratch — Flutter, FastAPI and AWS — with AI-powered visiting-card scanning, HTMX/Jinja2 admin dashboards and full CI/CD release pipelines.
+
+* Modern Workflow: I use unit and integration testing, CI/CD and AI-assisted development to move from idea to release faster while maintaining quality, and I maintain open-source Flutter packages on pub.dev.
 """;
 
   // ─────────────────────────────────────────────
@@ -85,25 +89,18 @@ Key Competencies & Leadership Highlights:
   //  Technical Skills
   // ─────────────────────────────────────────────
   static const List<String> technicalSkill = [
-    "Flutter (Mobile · Web · Desktop · macOS · Linux · Windows)",
-    "Dart — BLoC, Cubit, Provider",
-    "Team Leadership & Developer Mentorship",
-    "MVC & MVVM Architecture",
-    "FastAPI (Python) — REST APIs & Admin Dashboards",
-    "AWS — Cloud Deployment & Infrastructure",
-    "HTMX & Jinja2 — Admin Dashboard UI",
-    "Firebase — Auth, Firestore, FCM, Storage",
-    "AI Integration — Gemini APIs",
-    "Google Maps & Location Services",
-    "MySQL · SQLite (sqflite) · Hive · SharedPreferences",
-    "WebSocket & MQTT Protocol",
-    "Custom Flutter Package Development (pub.dev)",
-    "CI/CD Pipelines",
-    "Deep Links & Universal Links (iOS & Android)",
-    "App Store & Play Store Publishing",
-    "Git — GitHub / GitLab",
-    "Agile / Scrum Development",
-    "RESTful API Integration",
+    "Flutter & Dart — Mobile, Web & Desktop",
+    "State Management — BLoC, Riverpod & Provider",
+    "Architecture — MVC & MVVM",
+    "Team Leadership & Mentorship",
+    "Backend — FastAPI, HTMX, Jinja2 & REST APIs",
+    "Cloud & CI/CD — AWS Deployment Pipelines",
+    "Data — Firebase, MySQL, PostgreSQL, SQLite, Hive & Isar",
+    "Payments — Razorpay, Stripe, PayPal & CCAvenue",
+    "Real-Time — WebSocket & MQTT",
+    "Integrations — Google Maps, ML Kit, Charts, Bluetooth & POS",
+    "Testing — Unit & Integration",
+    "Publishing — App Store & Google Play",
   ];
 
   // ─────────────────────────────────────────────
@@ -149,27 +146,15 @@ Key Competencies & Leadership Highlights:
     {
       "company": "Excrin ThinkLabs",
       'logo': Assets.excrin,
-      'position': "Flutter Intern",
-      'duration': "Jan 2021 – May 2021",
+      'position': "Junior Flutter Developer",
+      'duration': "Jan 2021 – Jun 2022",
       'experience': """
 • Built and iterated on multiple UI screens from Figma designs using Flutter.
-• Integrated Firebase services (Authentication, Firestore, Cloud Messaging).
-• Implemented Google Maps integration for location-aware features.
-• Collaborated with the senior team to understand production-grade app workflows.
-""",
-      'site': 'https://excrin.com/',
-      'btnTitle': 'excrin.com',
-    },
-    {
-      "company": "Excrin ThinkLabs",
-      'logo': Assets.excrin,
-      'position': "Junior Flutter Developer",
-      'duration': "Jun 2021 – Jun 2022",
-      'experience': """
+• Integrated Firebase services (Authentication, Firestore, Cloud Messaging) and Google Maps for location-aware features.
 • Developed a fully functional E-commerce Food Delivery application end-to-end.
 • Implemented cart management, order tracking, and payment gateway integration.
 • Successfully published the app on the Google Play Store.
-• Maintained and improved app performance based on user feedback.
+• Collaborated with the senior team and maintained app performance based on user feedback.
 """,
       'site': 'https://excrin.com/',
       'btnTitle': 'excrin.com',
@@ -205,15 +190,16 @@ Key Competencies & Leadership Highlights:
       'btnTitle': 'MOT',
     },
     {
-      'company': 'Fellow Founder · Faithnet Technologies',
+      'company': 'Faithnet Technologies',
       'logo': Assets.fellowFounder,
-      'position': 'Lead Full-Stack Developer and CTO — Startup',
+      'position': 'CTO and App Developer',
       'duration': 'Jul 2024 – Present',
       'experience': """
 • Architected and led end-to-end development of the Fellow Founder mobile app and its FastAPI backend, deployed on AWS.
 • Designed the admin dashboard using HTMX and Jinja2 Templates.
 • Built an AI-driven networking platform leveraging Gemini APIs.
 • Managed full App Store and Google Play deployment pipeline for a seamless cross-platform launch.
+• Established unit and integration testing practices and adopted AI agents to accelerate development and deployment.
 • Collaborated directly with founders to shape product direction and technical strategy.
 """,
       'site': 'https://www.fellowfounder.in/',
@@ -224,18 +210,10 @@ Key Competencies & Leadership Highlights:
   // ─────────────────────────────────────────────
   //  Languages Known
   // ─────────────────────────────────────────────
-  static const List<String> languages = [
-    "Tamil",
-    "English",
-    "Hindi",
-    "Kannada",
-    "Malayalam",
-    "Telugu",
-    "Urdu",
-  ];
+  static const List<String> languages = ["Tamil", "English", "Hindi"];
 
   // ─────────────────────────────────────────────
-  //  Open Source — pub.dev Packages
+  //  Open Source — Packages
   // ─────────────────────────────────────────────
   static const List<Map<String, String>> openSourcePackages = [
     {'name': 'photofilters', 'url': 'https://pub.dev/packages/photofilters'},
@@ -247,21 +225,25 @@ Key Competencies & Leadership Highlights:
       'name': 'fancy_bottom_navigation_plus',
       'url': 'https://pub.dev/packages/fancy_bottom_navigation_plus',
     },
-    {'name': 'sizer_pro', 'url': 'https://pub.dev/packages/sizer_pro'},
+    {
+      'name': 'qr_flutter_plus',
+      'url': 'https://pub.dev/packages/qr_flutter_plus',
+    },
     {
       'name': 'flutter_neumorphic',
-      'url': 'https://pub.dev/packages/flutter_neumorphic',
+      'url': 'https://github.com/jinosh05/Flutter-Neumorphic',
     },
   ];
 
   // ─────────────────────────────────────────────
-  //  Portfolio — Published Apps
+  //  Portfolio — Apps & Projects
   // ─────────────────────────────────────────────
   static const List<Map<String, dynamic>> appsInfo = [
     {
       'img': Assets.fellowFounder,
       'name': "Fellow Founder",
-      'description': "A networking platform for startup founders.",
+      'description':
+          "A complete networking platform for startup founders with AI-powered visiting-card scanning.",
       'links': [
         {
           'icon': Assets.appstore,
@@ -278,14 +260,14 @@ Key Competencies & Leadership Highlights:
       'img': Assets.hiLightMedia,
       'name': "Hi-Light Media",
       'description':
-          "High-performance digital signage and media playback application built for cross-platform devices.",
+          "High-performance digital signage and media playback application built for low-spec TVs.",
       'links': [],
     },
     {
       'img': Assets.quran,
       'name': "Al Quran Multilingual Pro",
       'description':
-          "A comprehensive multilingual Quran app across 5 platforms.",
+          "A comprehensive multilingual Quran app across 5 platforms with support for 90+ languages.",
       'links': [
         {
           'icon': Assets.appstore,
@@ -361,9 +343,27 @@ Key Competencies & Leadership Highlights:
       ],
     },
     {
+      'img': Assets.fundae,
+      'name': "Fundae: Family Event Booking",
+      'description': "Family event booking app for children's events in India.",
+      'links': [
+        {
+          'icon': Assets.appstore,
+          'url':
+              "https://apps.apple.com/us/app/fundae-family-event-booking/id6811892706",
+        },
+        {
+          'icon': Assets.playstore,
+          'url':
+              "https://play.google.com/store/apps/details?id=com.fundae.app&hl=en_IN",
+        },
+      ],
+    },
+    {
       'img': Assets.cg,
       'name': "Cake Gallery",
-      'description': "E-commerce app for cakes & gifts delivery.",
+      'description':
+          "Cakes, gifts & flowers delivery e-commerce app built with Material UI 3.",
       'links': [
         {
           'icon': Assets.appstore,
@@ -394,9 +394,22 @@ Key Competencies & Leadership Highlights:
       ],
     },
     {
+      'img': Assets.placeholder,
+      'name': "Warehouse Management & Delivery",
+      'description':
+          "Warehouse count management with printable PDF invoices and Bluetooth POS printing, plus a dedicated delivery app with real-time order tracking.",
+      'links': [],
+    },
+    {
+      'img': Assets.placeholder,
+      'name': "Webapp Ecommerce",
+      'description': "Fully responsive e-commerce web app built with Flutter.",
+      'links': [],
+    },
+    {
       'img': Assets.b2b,
       'name': "B2B Purchase",
-      'description': "B2B wholesale purchasing app for business clients.",
+      'description': "E-magazine app built exclusively for B2B businesses.",
       'links': [
         {
           'icon': Assets.playstore,
@@ -440,19 +453,28 @@ Key Competencies & Leadership Highlights:
     {
       'img': Assets.placeholder,
       'name': "Watscooking",
-      'description': "Food recipe discovery and meal planning app.",
+      'description': "Home food booking e-commerce app.",
       'links': [],
     },
     {
       'img': Assets.placeholder,
       'name': "CBI Service",
-      'description': "E-Commerce Food Delivery mobile application.",
+      'description':
+          "E-commerce food booking app with dedicated vendor and delivery boy apps.",
+      'links': [],
+    },
+    {
+      'img': Assets.placeholder,
+      'name': "Doctor Booking",
+      'description':
+          "Doctor appointment booking app built with Flutter and Firebase.",
       'links': [],
     },
     {
       'img': Assets.placeholder,
       'name': "Klimb",
-      'description': "E-Learning Platform by OLA - Unpublished.",
+      'description':
+          "Educational app for handling question-and-answer sessions — unreleased.",
       'links': [],
     },
   ];

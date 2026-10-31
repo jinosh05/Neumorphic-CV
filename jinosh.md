@@ -40,7 +40,7 @@ Email : jinosh05@gmail.com
 - Chennai, India
 
 ## Master of Computer Applications (MCA)
-- Apollo Arts and Science College
+- Annamalai University
 - Duration - September 2021 - September 2023
 - Chennai, India
 - Mode - Distance Education
