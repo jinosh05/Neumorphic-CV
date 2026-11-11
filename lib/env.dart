@@ -56,7 +56,7 @@ class Env {
   //  About Me
   // ─────────────────────────────────────────────
   static const String aboutMe = """
-Flutter Team Lead, Mobile Architect and CTO with nearly 5 years of experience and 13+ apps shipped across the Google Play Store and Apple App Store. I specialize in defining robust app architectures, leading cross-platform teams and taking products from first sketch to store release. I remain hands-on across architecture and implementation, and I care deeply about mentoring developers, clean architecture and long-term maintainability.
+Flutter Team Lead, Mobile Architect and CTO with nearly 6 years of experience and 13+ apps shipped across the Google Play Store and Apple App Store. I specialize in defining robust app architectures, leading cross-platform teams and taking products from first sketch to store release. I remain hands-on across architecture and implementation, and I care deeply about mentoring developers, clean architecture and long-term maintainability.
 
 Key Competencies & Leadership Highlights:
 
