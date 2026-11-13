@@ -172,6 +172,13 @@ Email : jinosh05@gmail.com
 - Tech : Flutter, Dart, Firebase, FastAPI, Postgres, AI Image Generators
 - Packages : Firebase Messaging, Analytics, Crashlytics, Unit Testing, Integration Testing, Flame
 
+19) Quran Omni Web
+- Deployed (https://alquranjino.online)
+- SEO-optimized multilingual Quran web app with 470+ translations in 90+ languages, blog, downloadable PDFs and sitemaps
+- Tech : Next.js, React, TypeScript, Tailwind CSS
+- Packages : Radix UI, TanStack React Query, Framer Motion, Firebase
+- Achievement - Built the full codebase, wrote the SEO (meta tags, sitemaps, llms.txt) and deployed to production
+
 
 
 # Open Source Packages
@@ -237,8 +244,10 @@ https://github.com/jinosh05/Flutter-Neumorphic
 15) Hi-Light Media
 16) Fellow Founder
 17) Fundae
+19) Quran Omni Web
 
 - Learnt Desktop App publishing and Launched them in a Dedicated Site
 - Became a Founder and Took Responsibility for Building the Fellow Founder from Scratch 
 - Worked on Flutter Test Concepts
 - Started to work with AI Agents for Faster App development and Deployment
+- Built and deployed an SEO-optimized multilingual Quran web app (Next.js) at https://alquranjino.online

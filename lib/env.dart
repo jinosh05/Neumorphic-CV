@@ -326,6 +326,19 @@ Key Competencies & Leadership Highlights:
       ],
     },
     {
+      'img': Assets.quran,
+      'name': "Quran Omni Web",
+      'description':
+          "SEO-optimized multilingual Quran web app with 470+ translations in 90+ languages, built with Next.js and deployed at https://alquranjino.online.",
+      'links': [
+        {'icon': Assets.web, 'url': "https://alquranjino.online"},
+        {
+          'icon': Assets.gitIcon,
+          'url': "https://github.com/jinosh05/Al-Quran-Multilingual-Desktop",
+        },
+      ],
+    },
+    {
       'img': Assets.skolara,
       'name': "Skolara",
       'description': "An education & upskilling platform for students.",
